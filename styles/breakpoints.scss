@@ -1,0 +1,6 @@
+$full-version: 321px;
+@mixin full-version {
+  @media screen and (min-width: $full-version) {
+    @content;
+  }
+}

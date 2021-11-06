@@ -1,0 +1,44 @@
+.service-description {
+  width: 100%;
+  padding: 46px 15px;
+  background-color: rgba(244, 245, 247, 1);
+  @include full-version {
+    width: 100%;
+    display: flex;
+    padding: 77px 131px 76px 130px;
+  }
+  &__article {
+    width: 100%;
+    height: 136px;
+    display: flex;
+    flex-direction: column;
+    @include full-version {
+      height: 102px;
+      flex-direction: column;
+    }
+    &:nth-child(1) {
+      margin-bottom: 20px;
+      height: 180px;
+      justify-content: space-around;
+      @include full-version {
+        margin-right: 29px;
+        height: 102px;
+        margin-bottom: 0;
+      }
+    }
+    & .service-description__title {
+      margin: 0px;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 32px;
+    }
+    & .service-description__paragraph {
+      font-size: 22px;
+      line-height: 32px;
+      margin: 0;
+      @include full-version {
+        margin-top: auto;
+      }
+    }
+  }
+}

@@ -6,10 +6,13 @@ body {
   display: flex;
   flex-direction: column;
   color: rgba(43, 41, 45, 1);
-}
-.webpage {
-  width: 100%;
-  overflow-x: hidden;
+  & .webpage {
+    width: 100%;
+    @include full-version {
+      margin: auto;
+      width: 1400px;
+    }
+  }
 }
 .action-button {
   background-color: rgba(48, 64, 196, 1);
@@ -21,19 +24,8 @@ body {
   border: none;
   border-radius: 2px;
   margin-bottom: 15px;
-}
-@media screen and (min-width: 321px) {
-  .webpage {
-    margin: auto;
-    width: 1400px;
-    position: relative;
-  }
-  .action-button {
+  @include full-version {
     width: 160px;
-    font-size: 18px;
-    font-weight: 700;
-    border: none;
-    border-radius: 2px;
     margin-bottom: 0;
   }
 }

@@ -14,14 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/top-section-header.css" />
-    <link rel="stylesheet" href="styles/top-section-headline.css" />
-    <link rel="stylesheet" href="styles/service-description.css" />
-    <link rel="stylesheet" href="styles/customers.css" />
-    <link rel="stylesheet" href="styles/features.css" />
-    <link rel="stylesheet" href="styles/advantages-mobile.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <!-- content -->
@@ -34,8 +27,17 @@
         <!-- header  -->
 
         <header class="header">
-          <div class="logo logo-header">
-            <img class="logo__image" src="pictures/icon.png" alt="logo" />
+          <div class="logo header-logo">
+            <img
+              class="logo__image"
+              src="pictures/icon-header-desktop.png"
+              alt="logo"
+            />
+            <img
+              src="pictures/icon-header-mobile.png"
+              alt="logo"
+              class="logo__image_mobile"
+            />
             <div class="logo__text">
               <div class="logo__text_title">Foundation</div>
               <div class="logo__text_description">Startup landing template</div>
@@ -47,12 +49,17 @@
             </a>
             <a href="#" class="header-nav__item">Stories</a>
             <a href="#" class="header-nav__item"
-              >Libraries<i class="nav-arrow"></i
-            ></a>
+              >Libraries
+              <img
+                src="pictures/arrow-down.png"
+                alt="Open menu"
+                class="nav-arrow"
+              />
+            </a>
           </nav>
           <button class="header-button">Get Started</button>
-          <div class="header__mobile-menu-section">
-            <button class="header__mobile-menu-button">
+          <div class="header__mobile-menu">
+            <button class="header__mobile-menu_button">
               <img
                 src="pictures/mobile-version/popdown-menu.png"
                 alt="Open menu"
@@ -65,8 +72,10 @@
 
         <div class="headline">
           <div class="headline-content">
-            <h1 class="headline__title">Build stunning websites & apps.</h1>
-            <p class="headline__description">
+            <h1 class="headline-content__title">
+              Build stunning websites & apps.
+            </h1>
+            <p class="headline-content__description">
               Create live segments and target the right people for messages
               based on their behaviors.
             </p>
@@ -105,53 +114,49 @@
       <!-- customers  -->
 
       <section class="customers">
-        <div class="customers__mobile-version-line">
-          <div class="customers__item customers__item_new-york-times">
+        <div class="customers-row">
+          <div class="customers-row__item customers-row__item_new-york-times">
             <img
               src="pictures/customers/NYT.png"
               alt="New York Times"
-              class="customers__logo"
+              class="customers-logo"
             />
           </div>
-          <div class="customers__item customers__item_forbes">
+          <div class="customers-row__item customers-row__item_forbes">
             <img
               src="pictures/customers/Forbes.png"
               alt="Forbes"
-              class="customers__logo customers__logo_forbes"
+              class="customers-logo customers-logo_forbes"
             />
           </div>
-          <div class="customers__item customers__item_apple">
+          <div class="customers-row__item customers-row__item_apple">
             <img
               src="pictures/customers/Apple.png"
               alt="Apple"
-              class="customers__logo customers__logo_apple"
+              class="customers-logo customers-logo_apple"
             />
           </div>
         </div>
-        <div
-          class="
-            customers__mobile-version-line customers__mobile-version-line_bottom
-          "
-        >
-          <div class="customers__item customers__item_mashable">
+        <div class="customers-row">
+          <div class="customers-row__item customers-row__item_mashable">
             <img
               src="pictures/customers/Mashable.png"
               alt="Mashable"
-              class="customers__logo customers__logo_mashable"
+              class="customers-logo customers-logo_mashable"
             />
           </div>
-          <div class="customers__item">
+          <div class="customers-row__item">
             <img
               src="pictures/customers/WSJ.png"
               alt="WSJ"
-              class="customers__logo customers__logo_wsj"
+              class="customers-logo customers-logo_wsj"
             />
           </div>
-          <div class="customers__item customers__item_google">
+          <div class="customers-row__item customers-row__item_google">
             <img
               src="pictures/customers/Google.png"
               alt="Google"
-              class="customers__logo customers__logo_google"
+              class="customers-logo customers-logo_google"
             />
           </div>
         </div>
@@ -160,62 +165,64 @@
       <!-- product advantages mobile  -->
 
       <section class="advantages-mob">
-        <div class="advantages-mob__item">
-          <h6 class="advantages-mob__small-title">Acquire Customers</h6>
-          <h1 class="advantages-mob__big-title">
+        <div class="advantages-mob-item">
+          <h6 class="advantages-mob-item__small-title">Acquire Customers</h6>
+          <h1 class="advantages-mob-item__big-title">
             Easily find leads and customers
           </h1>
-          <p class="advantages-mob__paragraph">
+          <p class="advantages-mob-item__paragraph">
             Send one-off and automated email, push, and in-app messages to
             people. Create better stories.
           </p>
-          <figure class="advantages-mob__graphics">
+          <figure class="advantages-mob-item__graphics">
             <img
               src="pictures/mobile-version/advantages-mobile/bird-in-cell.png"
               alt="theme picture"
-              class="advantages-mob__picture"
+              class="advantages-mob-item__graphics-picture"
             />
-            <figcaption class="advantages-mob__item-subtitle">
+            <figcaption class="advantages-mob-item__graphics-subtitle">
               A better way to acquire new users
             </figcaption>
           </figure>
-          <div class="advantages-mob__item_line"></div>
+          <div class="advantages-mob-item__line"></div>
         </div>
-        <div class="advantages-mob__item">
-          <h6 class="advantages-mob__small-title">Engage Users</h6>
-          <h1 class="advantages-mob__big-title">Engage with your audience</h1>
-          <p class="advantages-mob__paragraph">
+        <div class="advantages-mob-item">
+          <h6 class="advantages-mob-item__small-title">Engage Users</h6>
+          <h1 class="advantages-mob-item__big-title">
+            Engage with your audience
+          </h1>
+          <p class="advantages-mob-item__paragraph">
             Send one-off and automated email, push, and in-app messages to
             people. Create better stories.
           </p>
-          <figure class="advantages-mob__graphics">
+          <figure class="advantages-mob-item__graphics">
             <img
               src="pictures/mobile-version/advantages-mobile/mirror.png"
               alt="theme picture"
-              class="advantages-mob__picture"
+              class="advantages-mob-item__graphics-picture"
             />
-            <figcaption class="advantages-mob__item-subtitle">
+            <figcaption class="advantages-mob-item__graphics-subtitle">
               Knowledge base and smart self-service
             </figcaption>
           </figure>
-          <div class="advantages-mob__item_line"></div>
+          <div class="advantages-mob-item__line"></div>
         </div>
-        <div class="advantages-mob__item">
-          <h6 class="advantages-mob__small-title">Support</h6>
-          <h1 class="advantages-mob__big-title">
+        <div class="advantages-mob-item">
+          <h6 class="advantages-mob-item__small-title">Support</h6>
+          <h1 class="advantages-mob-item__big-title">
             The best customer experiences
           </h1>
-          <p class="advantages-mob__paragraph">
+          <p class="advantages-mob-item__paragraph">
             A beautifully simple system for tracking, prioritizing, and solving
             customer support tickets.
           </p>
-          <figure class="advantages-mob__graphics">
+          <figure class="advantages-mob-item__graphics">
             <img
               src="pictures/mobile-version/advantages-mobile/tv.png"
               alt="theme picture"
-              class="advantages-mob__picture"
+              class="advantages-mob-item__graphics-picture"
             />
-            <figcaption class="advantages-mob__item-subtitle">
+            <figcaption class="advantages-mob-item__graphics-subtitle">
               Live chat and messaging
             </figcaption>
           </figure>
@@ -228,33 +235,41 @@
         <img
           src="pictures/features/picture-left-bar.png"
           alt="design picture"
-          class="feature__left-bar-picture"
+          class="features__left-bar-picture"
         />
-        <div class="features_info-section">
-          <h4 class="features__upper-title">Features</h4>
-          <h2 class="features__big-title">Easily find leads and customers</h2>
-          <p class="features__description">
+        <div class="features__info-section">
+          <h4 class="features__info-section_upper-title">Features</h4>
+          <h2 class="features__info-section_big-title">
+            Easily find leads and customers
+          </h2>
+          <p class="features__info-section_description">
             Send one-off and automated email, push, and in-app messages to
             people. Create better stories.
           </p>
-          <div class="features__main-selling-title-container">
+          <div class="features__info-section_blue-title-container">
             <img src="pictures/features/icon-path.png" alt="theme picture" />
-            <h5 class="features__main-selling-title">Acquire new customers</h5>
+            <h5 class="features__info-section_blue-title">
+              Acquire new customers
+            </h5>
           </div>
-          <p class="features__selling-description">
+          <p class="features__info-section_blue-title-text">
             Everything you need to start building – including open-source code,
             documentation.
           </p>
-          <div class="features__selling-title">
+          <div class="features__selling-point-container">
             <img src="pictures/features/icon-house.png" alt="theme picture" />
-            <span class="features__selling-title_text">Engage users</span>
+            <span class="features__selling-point-container_text"
+              >Engage users</span
+            >
           </div>
-          <div class="features__selling-title features__selling-title_bottom">
+          <div
+            class="
+              features__selling-point-container
+              features__selling-point-containter_bottom
+            "
+          >
             <img src="pictures/features/icon-blocks.png" alt="theme picture" />
-            <span
-              class="
-                features__selling-title_text features__selling-title-bottom_text
-              "
+            <span class="features__selling-point-container_text"
               >Develop across platforms</span
             >
           </div>
@@ -279,12 +294,12 @@
               />
               <div class="footer-logo__text">
                 <div class="footer-logo__text_title">Foundation</div>
-                <div class="footer__logo-text_transperant">
+                <div class="footer-logo__text_transperant">
                   Startup landing template
                 </div>
               </div>
             </div>
-            <p class="footer__about-company-text">
+            <p class="about-company__text">
               Foundation is a website template for startups and small teams. It
               helps to build a website in no time.
             </p>
@@ -313,8 +328,8 @@
           </div>
           <div class="footer-line-mobile"></div>
           <div class="footer-nav">
-            <div class="footer-nav__product">
-              <h3 class="footer-nav__column_title">Product</h3>
+            <div class="footer-nav__product footer-nav__column">
+              <h3 class="footer-nav__title">Product</h3>
               <ul class="footer-nav__list footer-nav__list_product">
                 <li class="footer-nav__list-item">Acquire Users</li>
                 <li class="footer-nav__list-item">Content Marketing</li>
@@ -323,8 +338,8 @@
                 <li class="footer-nav__list-item">Virtual Inbox</li>
               </ul>
             </div>
-            <div class="footer-nav__company">
-              <h3 class="footer-nav__column_title">Company</h3>
+            <div class="footer-nav__company footer-nav__column">
+              <h3 class="footer-nav__title">Company</h3>
               <ul class="footer-nav__list footer-nav__list_company">
                 <li class="footer-nav__list-item footer-nav__list-item_company">
                   About Foundation
@@ -344,10 +359,10 @@
         </div>
         <div class="footer-line-desktop"></div>
         <div class="footer-bottom">
-          <nav class="terms-and-conditions">
-            <a href="#" class="footer-terms__item">Terms</a>
-            <a href="#" class="footer-terms__item">Privacy</a>
-            <a href="#" class="footer-terms__item">License</a>
+          <nav class="terms">
+            <a href="#" class="terms__item">Terms</a>
+            <a href="#" class="terms__item">Privacy</a>
+            <a href="#" class="terms__item">License</a>
           </nav>
           <div class="social-networks">
             <a

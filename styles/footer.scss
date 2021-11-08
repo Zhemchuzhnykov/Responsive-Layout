@@ -60,7 +60,7 @@
           display: block;
           font-size: 18px;
           line-height: 25px;
-          color: rgba(43, 41, 45, 0.6);
+          color: $grey-transperant;
         }
       }
     }
@@ -72,7 +72,7 @@
         line-height: 26px;
         font-size: 18px;
         margin-top: 26px;
-        color: rgba(43, 41, 45, 0.6);
+        color: $grey-transperant;
         margin-bottom: 25px;
         display: block;
       }
@@ -90,7 +90,7 @@
   }
   & footer-line-mobile {
     width: 100%;
-    border-bottom: 1px solid rgba(227, 227, 227, 1);
+    border-bottom: 1px solid $grey-line;
     @include full-version {
       display: none;
     }
@@ -138,7 +138,7 @@
         }
       }
       &-item {
-        color: rgba(43, 41, 45, 0.6);
+        color: $grey-transperant;
         font-size: 18px;
         line-height: 30px;
         margin-bottom: 7px;
@@ -154,7 +154,7 @@
   &-line-desktop {
     display: none;
     width: 100%;
-    border-bottom: 1px solid rgba(227, 227, 227, 1);
+    border-bottom: 1px solid $grey-line;
     @include full-version {
       display: block;
     }
@@ -181,7 +181,7 @@
       }
       &__item {
         text-decoration: none;
-        color: rgba(43, 41, 45, 0.6);
+        color: $grey-transperant;
         font-size: 14px;
         line-height: 22px;
         height: 22px;

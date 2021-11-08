@@ -16,8 +16,8 @@
     &__item {
       max-width: 107px;
       height: 94px;
-      border-bottom: solid 1px rgba(227, 227, 227, 1);
-      border-right: solid 1px rgba(227, 227, 227, 1);
+      border-bottom: solid 1px $grey-line;
+      border-right: solid 1px $grey-line;
       display: flex;
       flex: 1;
       @include full-version {

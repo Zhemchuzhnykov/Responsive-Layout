@@ -13,7 +13,7 @@
       font-weight: 700;
       font-size: 22px;
       line-height: 34px;
-      color: rgba(0, 155, 77, 1);
+      color: $green;
     }
     &__big-title {
       margin: 0;
@@ -55,7 +55,7 @@
         height: 22px;
         font-size: 14px;
         line-height: 22px;
-        color: rgba(43, 41, 45, 0.6);
+        color: $grey-transperant;
         text-align: center;
       }
     }
@@ -68,7 +68,7 @@
       width: 321px;
       position: absolute;
       bottom: 40px;
-      border-bottom: 1px solid rgba(227, 227, 227, 1);
+      border-bottom: 1px solid $grey-line;
     }
   }
   @include full-version {

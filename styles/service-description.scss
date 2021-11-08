@@ -1,7 +1,7 @@
 .service-description {
   width: 100%;
   padding: 46px 15px;
-  background-color: rgba(244, 245, 247, 1);
+  background-color: $grey-background;
   @include full-version {
     width: 100%;
     display: flex;

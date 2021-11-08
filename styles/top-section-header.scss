@@ -5,17 +5,16 @@
   flex-direction: column;
   @include full-version {
     padding-top: 39px;
-    height: 710px;
+    min-height: 710px;
   }
 }
 .header {
-  height: 64px;
+  min-height: 64px;
   width: 100%;
-  background-color: $grey-background;
+  background-color: $white;
   display: flex;
   @include full-version {
-    width: 100%;
-    height: 62px;
+    min-height: 62px;
     margin: 0;
     background-color: $pink-background;
   }
@@ -27,16 +26,16 @@
     & .logo__image {
       display: none;
       @include full-version {
-        width: 60px;
-        height: 60px;
+        max-width: 60px;
+        min-height: 60px;
         margin: 2px 15px 0px 0px;
         display: inline;
       }
       }
     & .logo__image_mobile {
       margin: 8px 13px 8px 15px;
-      width: 48px;
-      height: 48px;
+      max-width: 48px;
+      min-height: 48px;
       @include full-version {
         display: none;
       }
@@ -46,13 +45,13 @@
       flex-direction: column;
       justify-content: center;
       @include full-version {
-        width: 222px;
+        max-width: 222px;
       }
       &_title {
         line-height: 25px;
         font-size: 20px;
         font-weight: 700;
-        width: 111px;
+        max-width: 111px;
       }
       &_description {
         display: none;
@@ -73,7 +72,7 @@
       padding-top: 7px;
       padding-right: 56px;
       display: flex;
-      width: 348px;
+      max-width: 348px;
     }
       &__item {
         
@@ -89,9 +88,8 @@
           font-weight: 700;
         }
         &:last-child .nav-arrow  {
-          // background: url(../pictures/arrow-down.png);
           display: inline-block;
-          height: 5px;
+          min-height: 5px;
           width: 8px;
           margin-left: 11px;
           vertical-align: middle;
@@ -104,7 +102,7 @@
       background-color: $blue;
       color: $white;
       width: 160px;
-       height: 48px;
+      height: 48px;
       font-size: 18px;
       font-weight: 700;
       border: none;
@@ -115,7 +113,7 @@
     }
     &__mobile-menu {
       width: 59px;
-      height: 64px;
+      min-height: 64px;
       border-left: 1px solid $grey-line;
       margin-left: auto;
       display: flex;

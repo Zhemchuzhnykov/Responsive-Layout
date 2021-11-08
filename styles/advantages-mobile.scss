@@ -1,8 +1,8 @@
 
 .advantages-mob {
-  padding: 48px 15px 50px 15px;
+  padding: 48px 0px 50px 0px;
   &-item {
-    padding-bottom: 81px;
+    padding: 0px 15px 40px 15px;
     position: relative;
     &:last-child {
       padding-bottom: 0;
@@ -64,12 +64,11 @@
       > .advantages-mob-item__graphics-subtitle {
       margin-top: 19px;
     }
-    &__line {
-      width: 321px;
-      position: absolute;
-      bottom: 40px;
-      border-bottom: 1px solid $grey-line;
-    }
+  }
+  &__line {
+    width: 100%;
+    border-bottom: 1px solid $grey-line;
+    margin-bottom: 40px;
   }
   @include full-version {
     display: none;

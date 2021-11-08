@@ -20,7 +20,7 @@
       color: $green;
       margin: 0;
       padding-left: 2px;
-      height: 34px;
+      min-height: 34px;
     }
     &_big-title {
       font-weight: 700;
@@ -29,23 +29,23 @@
       letter-spacing: -0.5px;
       margin: 0;
       padding-top: 24px;
-      width: 462px;
+      max-width: 462px;
     }
     &_description {
       font-size: 24px;
       line-height: 34px;
       padding-top: 30px;
-      width: 461px;
+      max-width: 461px;
       margin-bottom: 0;
       padding-left: 2px;
       margin: 0;
-      height: 132px;
+      min-height: 132px;
     }
     &_blue-title-container {
       padding-top: 42px;
       display: flex;
       padding-left: 3px;
-      height: 70px;
+      min-height: 70px;
       & > .features__info-section_blue-title {
         margin: 0;
         padding-left: 15px;
@@ -58,13 +58,13 @@
     &_blue-title-text {
       font-size: 18px;
       line-height: 26px;
-      width: 459px;
+      max-width: 459px;
       margin: 0;
       padding-top: 8px;
       padding-bottom: 18px;
       border-bottom: 3px solid $blue;
       padding-left: 3px;
-      height: 81px;
+      min-height: 81px;
     }
   }
   &__selling-point-container {
@@ -73,7 +73,7 @@
     padding-bottom: 22px;
     display: flex;
     padding-left: 4px;
-    height: 71px;
+    min-height: 71px;
     &_text {
       font-weight: 700;
       font-size: 22px;
@@ -93,5 +93,6 @@
     position: relative;
     margin-left: auto;
     filter: drop-shadow(0px 4px 16px rgba(44, 50, 65, 0.08));
+    max-height: 597px;
   }
 }

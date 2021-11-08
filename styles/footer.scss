@@ -67,7 +67,7 @@
     &__text {
       display: none;
       @include full-version {
-        width: 360px;
+        max-width: 360px;
         height: 85px;
         line-height: 26px;
         font-size: 18px;
@@ -88,7 +88,7 @@
       }
     }
   }
-  & footer-line-mobile {
+  & .footer-line-mobile {
     width: 100%;
     border-bottom: 1px solid $grey-line;
     @include full-version {
@@ -166,7 +166,6 @@
     @include full-version {
       width: 100%;
       flex-direction: row;
-      height: 50px;
       align-items: center;
       padding: 13px 0px 15px 0px;
     }

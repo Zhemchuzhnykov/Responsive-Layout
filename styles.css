@@ -1,8 +1,8 @@
 .advantages-mob {
-  padding: 48px 15px 50px 15px;
+  padding: 48px 0px 50px 0px;
 }
 .advantages-mob-item {
-  padding-bottom: 81px;
+  padding: 0px 15px 40px 15px;
   position: relative;
 }
 .advantages-mob-item:last-child {
@@ -63,11 +63,10 @@
 .advantages-mob-item:first-child .advantages-mob-item__graphics > .advantages-mob-item__graphics-subtitle {
   margin-top: 19px;
 }
-.advantages-mob-item__line {
-  width: 321px;
-  position: absolute;
-  bottom: 40px;
+.advantages-mob__line {
+  width: 100%;
   border-bottom: 1px solid rgba(43, 41, 45, 0.15);
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 321px) {
   .advantages-mob {
@@ -91,7 +90,7 @@ body .webpage {
 @media screen and (min-width: 321px) {
   body .webpage {
     margin: auto;
-    width: 1400px;
+    max-width: 1400px;
   }
 }
 
@@ -108,7 +107,7 @@ body .webpage {
 }
 @media screen and (min-width: 321px) {
   .action-button {
-    width: 160px;
+    max-width: 160px;
     margin-bottom: 0;
   }
 }
@@ -208,7 +207,7 @@ body .webpage {
   color: #009b4d;
   margin: 0;
   padding-left: 2px;
-  height: 34px;
+  min-height: 34px;
 }
 .features__info-section_big-title {
   font-weight: 700;
@@ -217,23 +216,23 @@ body .webpage {
   letter-spacing: -0.5px;
   margin: 0;
   padding-top: 24px;
-  width: 462px;
+  max-width: 462px;
 }
 .features__info-section_description {
   font-size: 24px;
   line-height: 34px;
   padding-top: 30px;
-  width: 461px;
+  max-width: 461px;
   margin-bottom: 0;
   padding-left: 2px;
   margin: 0;
-  height: 132px;
+  min-height: 132px;
 }
 .features__info-section_blue-title-container {
   padding-top: 42px;
   display: flex;
   padding-left: 3px;
-  height: 70px;
+  min-height: 70px;
 }
 .features__info-section_blue-title-container > .features__info-section_blue-title {
   margin: 0;
@@ -246,13 +245,13 @@ body .webpage {
 .features__info-section_blue-title-text {
   font-size: 18px;
   line-height: 26px;
-  width: 459px;
+  max-width: 459px;
   margin: 0;
   padding-top: 8px;
   padding-bottom: 18px;
   border-bottom: 3px solid #3040c4;
   padding-left: 3px;
-  height: 81px;
+  min-height: 81px;
 }
 .features__selling-point-container {
   border-bottom: 1px solid rgba(43, 41, 45, 0.15);
@@ -260,7 +259,7 @@ body .webpage {
   padding-bottom: 22px;
   display: flex;
   padding-left: 4px;
-  height: 71px;
+  min-height: 71px;
 }
 .features__selling-point-container_text {
   font-weight: 700;
@@ -280,6 +279,7 @@ body .webpage {
   position: relative;
   margin-left: auto;
   filter: drop-shadow(0px 4px 16px rgba(44, 50, 65, 0.08));
+  max-height: 597px;
 }
 
 .footer {
@@ -365,7 +365,7 @@ body .webpage {
 }
 @media screen and (min-width: 321px) {
   .footer-main .about-company__text {
-    width: 360px;
+    max-width: 360px;
     height: 85px;
     line-height: 26px;
     font-size: 18px;
@@ -385,12 +385,12 @@ body .webpage {
 .footer-main .about-company .downloads__link:nth-child(1) {
   margin-right: 10px;
 }
-.footer-main footer-line-mobile {
+.footer-main .footer-line-mobile {
   width: 100%;
   border-bottom: 1px solid rgba(43, 41, 45, 0.15);
 }
 @media screen and (min-width: 321px) {
-  .footer-main footer-line-mobile {
+  .footer-main .footer-line-mobile {
     display: none;
   }
 }
@@ -478,7 +478,6 @@ body .webpage {
   .footer-bottom {
     width: 100%;
     flex-direction: row;
-    height: 50px;
     align-items: center;
     padding: 13px 0px 15px 0px;
   }
@@ -528,7 +527,6 @@ body .webpage {
 }
 @media screen and (min-width: 321px) {
   .service-description {
-    width: 100%;
     display: flex;
     padding: 77px 131px 76px 130px;
   }
@@ -583,20 +581,19 @@ body .webpage {
 @media screen and (min-width: 321px) {
   .top-section {
     padding-top: 39px;
-    height: 710px;
+    min-height: 710px;
   }
 }
 
 .header {
-  height: 64px;
+  min-height: 64px;
   width: 100%;
-  background-color: #f4f5f7;
+  background-color: white;
   display: flex;
 }
 @media screen and (min-width: 321px) {
   .header {
-    width: 100%;
-    height: 62px;
+    min-height: 62px;
     margin: 0;
     background-color: #f3c6bd;
   }
@@ -614,16 +611,16 @@ body .webpage {
 }
 @media screen and (min-width: 321px) {
   .header-logo .logo__image {
-    width: 60px;
-    height: 60px;
+    max-width: 60px;
+    min-height: 60px;
     margin: 2px 15px 0px 0px;
     display: inline;
   }
 }
 .header-logo .logo__image_mobile {
   margin: 8px 13px 8px 15px;
-  width: 48px;
-  height: 48px;
+  max-width: 48px;
+  min-height: 48px;
 }
 @media screen and (min-width: 321px) {
   .header-logo .logo__image_mobile {
@@ -637,14 +634,14 @@ body .webpage {
 }
 @media screen and (min-width: 321px) {
   .header-logo .logo__text {
-    width: 222px;
+    max-width: 222px;
   }
 }
 .header-logo .logo__text_title {
   line-height: 25px;
   font-size: 20px;
   font-weight: 700;
-  width: 111px;
+  max-width: 111px;
 }
 .header-logo .logo__text_description {
   display: none;
@@ -667,7 +664,7 @@ body .webpage {
     padding-top: 7px;
     padding-right: 56px;
     display: flex;
-    width: 348px;
+    max-width: 348px;
   }
 }
 .header-nav__item {
@@ -685,7 +682,7 @@ body .webpage {
 }
 .header-nav__item:last-child .nav-arrow {
   display: inline-block;
-  height: 5px;
+  min-height: 5px;
   width: 8px;
   margin-left: 11px;
   vertical-align: middle;
@@ -709,7 +706,7 @@ body .webpage {
 }
 .header__mobile-menu {
   width: 59px;
-  height: 64px;
+  min-height: 64px;
   border-left: 1px solid rgba(43, 41, 45, 0.15);
   margin-left: auto;
   display: flex;
@@ -752,12 +749,12 @@ body .webpage {
   font-size: 50px;
   margin-bottom: 24px;
   letter-spacing: -0.3125px;
-  height: 205px;
+  min-height: 205px;
 }
 @media screen and (min-width: 321px) {
   .headline-content__title {
-    width: 754px;
-    height: 165px;
+    max-width: 754px;
+    min-height: 165px;
     line-height: 78px;
     font-size: 80px;
     margin-bottom: 34px;
@@ -768,12 +765,12 @@ body .webpage {
   margin: 0px 0px 30px 0px;
   font-size: 24px;
   line-height: 34px;
-  height: 172px;
+  min-height: 172px;
 }
 @media screen and (min-width: 321px) {
   .headline-content__description {
-    width: 456px;
-    height: 102px;
+    max-width: 456px;
+    min-height: 102px;
     margin-bottom: 58px;
   }
 }
@@ -788,7 +785,7 @@ body .webpage {
 }
 .headline-content__buttons .learn-more-button {
   width: 100%;
-  height: 48px;
+  min-height: 48px;
   color: #3040c4;
   border-radius: 2px;
   font-size: 18px;
@@ -800,7 +797,7 @@ body .webpage {
 }
 @media screen and (min-width: 321px) {
   .headline-content__buttons .learn-more-button {
-    width: 158px;
+    max-width: 158px;
     margin-left: 10px;
   }
 }
@@ -815,8 +812,8 @@ body .webpage {
     right: 25px;
     margin-bottom: 77px;
     padding-bottom: 0;
-    width: 796px;
-    height: 448px;
+    max-width: 796px;
+    max-height: 448px;
   }
 }
 
@@ -839,7 +836,6 @@ body .webpage {
 @media screen and (min-width: 321px) {
   .free-trial__img {
     width: 269.41px;
-    height: 296px;
   }
 }
 .free-trial__text {
@@ -848,7 +844,7 @@ body .webpage {
 }
 .free-trial__text .free-trial__title {
   margin: 40px 0px 18px 0px;
-  width: 100%;
+  max-width: 100%;
   height: 80px;
   font-weight: 700;
   font-size: 40px;
@@ -885,6 +881,7 @@ body .webpage {
 @media screen and (min-width: 321px) {
   .free-trial__text .free-trial__action-buttons {
     flex-direction: row;
+    margin-left: 123.59px;
   }
 }
 .free-trial__text .free-trial__action-buttons > .free-trial__action-buttons_email {
@@ -898,8 +895,8 @@ body .webpage {
 }
 @media screen and (min-width: 321px) {
   .free-trial__text .free-trial__action-buttons > .free-trial__action-buttons_email {
-    margin: 0px 10px 0px 123.59px;
-    width: 385px;
+    margin: 0;
+    flex-grow: 1;
     text-align: left;
     padding-left: 15px;
   }
@@ -912,7 +909,7 @@ body .webpage {
 }
 @media screen and (min-width: 321px) {
   .free-trial__text .free-trial__action-buttons > .free-trial__action-buttons_get-started {
-    margin: 0;
+    margin: 0px 0px 0px 10px;
   }
 }
 .free-trial__text .free-trial__terms {
@@ -926,7 +923,7 @@ body .webpage {
 @media screen and (min-width: 321px) {
   .free-trial__text .free-trial__terms {
     margin-left: 122.59px;
-    width: 497px;
+    max-width: 497px;
     letter-spacing: 0.03px;
     margin-top: 10px;
   }

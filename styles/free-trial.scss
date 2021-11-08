@@ -12,7 +12,6 @@
     width: 200px;
     @include full-version {
       width: 269.41px;
-      height: 296px;
     }
   }
   &__text {
@@ -21,7 +20,7 @@
   }
   &__text .free-trial__title {
     margin: 40px 0px 18px 0px;
-    width: 100%;
+    max-width: 100%;
     height: 80px;
     font-weight: 700;
     font-size: 40px;
@@ -52,6 +51,7 @@
     flex-direction: column;
     @include full-version {
       flex-direction: row;
+      margin-left:123.59px;
     }
   }
   &__text .free-trial__action-buttons > .free-trial__action-buttons_email {
@@ -63,8 +63,8 @@
     font-size: 18px;
     text-align: center;
     @include full-version {
-      margin: 0px 10px 0px 123.59px;
-      width: 385px;
+      margin: 0;
+      flex-grow: 1;
       text-align: left;
       padding-left: 15px;
     }
@@ -75,7 +75,7 @@
   &__text .free-trial__action-buttons > .free-trial__action-buttons_get-started {
     margin-bottom: 10px;
     @include full-version {
-      margin: 0;
+      margin: 0px 0px 0px 10px;
     }
   }
   &__text .free-trial__terms {
@@ -87,7 +87,7 @@
     color: $grey-transperant;
     @include full-version {
       margin-left: 122.59px;
-      width: 497px;
+      max-width: 497px;
       letter-spacing: 0.03px;
       margin-top: 10px;
     }

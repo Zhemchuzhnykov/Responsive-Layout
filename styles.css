@@ -928,6 +928,9 @@ body .webpage {
     margin-top: 10px;
   }
 }
+.free-trial__text .free-trial__terms-link {
+  color: #3040c4;
+}
 
 .inbox-feature {
   padding: 50px 15px 48px 15px;

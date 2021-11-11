@@ -1,0 +1,133 @@
+.audience {
+  padding: 50px 15px;
+  background-color: $turquoise-background;
+  @include full-version {
+    padding: 108px 131px 110px 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    min-height: 983px;
+  }
+  &__small-title {
+    margin: 0;
+    margin-bottom: 17px;
+    min-height: 34px;
+    line-height: 34px;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    @include full-version {
+      margin-bottom: 24px;
+      max-width: 168px;
+    }
+  }
+  &__big-title {
+    margin: 0;
+    margin-bottom: 18px;
+    min-height: 80px;
+    line-height: 40px;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.357143px;
+    @include full-version {
+      margin-bottom: 30px;
+      min-height: 112px;
+      line-height: 56px;
+      max-width: 555px;
+      font-size: 56px;
+      letter-spacing: -0.5px;
+    }
+  }
+  &__description {
+    margin: 0;
+    margin-bottom: 30px;
+    min-height: 136px;
+    line-height: 34px;
+    font-size: 24px;
+    text-align: center;
+    @include full-version {
+      margin: 0;
+      min-height: 72px;
+      line-height: 34px;
+      max-width: 555px;
+      font-size: 24px;
+    }
+  }
+  &__buttons {
+    margin-bottom: 40px;
+    @include full-version {
+      display: flex;
+      position: absolute;
+      top: 414px;
+      left: 536px;
+    }
+    & > .audience__buttons_action-call {
+      margin-bottom: 12px;
+      @include full-version {
+        flex-shrink: 0;
+      }
+    }
+    & > .audience__buttons_learn-more {
+      color: $text;
+      @include full-version {
+        flex-shrink: 0;
+      }
+    }
+  }
+  &__pics {
+    @include full-version {
+      display: flex;
+      margin-top: auto;
+      justify-content: space-between;
+      width: 100%;
+    }
+    &-unit {
+      margin: 0;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      min-height: 300px;
+      background-color: $white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 22px 0px 33px 0px;
+      @include full-version {
+        margin-bottom: 0px;
+        width: 262px;
+      }
+      & > .audience__pics-unit-subtitle {
+        text-align: center;
+        height: 28px;
+        line-height: 28px;
+        font-size: 22px;
+        font-weight: 700;
+        margin-top: 22px;
+      }
+      &:nth-child(2) {
+        background-color: $blue;
+        @include full-version {
+          position: relative;
+        }
+        & > .audience__pics-unit-img_hand {
+          display: none;
+          width: 20px;
+          height: 21px;
+          @include full-version {
+            display: block;
+            position: absolute;
+            left: 18px;
+            bottom: 2px;
+          }
+        }
+        & > .audience__pics-unit-subtitle {
+          color: $white;
+        }
+      }
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

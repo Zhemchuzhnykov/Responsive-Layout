@@ -1508,4 +1508,76 @@ body .webpage {
   }
 }
 
+.hiring {
+  padding: 50px 15px;
+}
+.hiring__title {
+  margin: 0px;
+  margin-bottom: 18px;
+  min-height: 45px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: -0.357143px;
+}
+.hiring__description {
+  margin: 0px;
+  margin-bottom: 30px;
+  min-height: 136px;
+  font-size: 24px;
+  line-height: 34px;
+  text-align: center;
+}
+.hiring__button {
+  margin-bottom: 39px;
+}
+.hiring__vacancy {
+  min-height: 140px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(43, 41, 45, 0.2);
+  border-radius: 8px;
+}
+.hiring__vacancy:last-child {
+  margin-bottom: 0;
+}
+.hiring .vacancy {
+  display: flex;
+}
+.hiring .vacancy__brief {
+  flex: 7;
+}
+.hiring .vacancy__button {
+  flex: 1;
+  border: none;
+  background-color: #d5d4d5;
+  display: flex;
+}
+.hiring .vacancy__button-arrow {
+  display: block;
+  width: 7px;
+  height: 12px;
+  margin: auto;
+  background-image: url("pictures/arrow-right-grey.png");
+}
+.hiring .vacancy .position {
+  padding: 19px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hiring .vacancy .position__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+}
+.hiring .vacancy .position__location {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(43, 41, 45, 0.6);
+  min-height: 26px;
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,99 @@
+.feedback {
+  padding: 39px 15px 50px 15px;
+  border-bottom: 1px solid $grey-line;
+  @include full-version {
+    padding: 0px 130px 66px 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  &__title {
+    margin: 0;
+    margin-bottom: 29px;
+    min-height: 120px;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    color: $blue;
+    @include full-version {
+      min-height: 30px;
+      text-align: center;
+      margin-bottom: 28px;
+    }
+  }
+  &__text {
+    margin: 0;
+    margin-bottom: 32px;
+    min-height: 307px;
+    line-height: 34px;
+    font-size: 24px;
+    @include full-version {
+      max-width: 750px;
+      min-height: 102px;
+      text-align: center;
+      margin-bottom: 34px;
+    }
+  }
+  &__giver-name {
+    margin: 0;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &__giver-title {
+    margin: 0;
+    margin-bottom: 40px;
+    line-height: 24px;
+    font-size: 16px;
+    color: $grey-transperant;
+    @include full-version {
+      margin-bottom: 38px;
+    }
+  }
+  &__navigation {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+    @include full-version {
+      margin-bottom: 0;
+    }
+    &-item {
+      margin-right: 19.5px;
+      background-color: transparent;
+      border: none;
+      padding: 0;
+      height: 12px;
+      display: flex;
+      @include full-version {
+        margin-right: 13px;
+        height: 8px;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      & .feedback__navigation-item-shape {
+        border-radius: 50px;
+        fill: $grey-circle;
+        width: 12px;
+        height: 12px;
+        @include full-version {
+          width: 8px;
+          height: 8px;
+        }
+      }
+      &:first-child .feedback__navigation-item-shape {
+        fill: $blue;
+      }
+    }
+  }
+  &__img {
+    @include full-version {
+      position: absolute;
+      bottom: 0;
+      right: 26px;
+      max-width: 273px;
+      max-height: 243px;
+    }
+  }
+}

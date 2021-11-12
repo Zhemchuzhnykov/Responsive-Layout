@@ -1394,4 +1394,118 @@ body .webpage {
   margin-bottom: 0;
 }
 
+.feedback {
+  padding: 39px 15px 50px 15px;
+  border-bottom: 1px solid rgba(43, 41, 45, 0.15);
+}
+@media screen and (min-width: 321px) {
+  .feedback {
+    padding: 0px 130px 66px 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+}
+.feedback__title {
+  margin: 0;
+  margin-bottom: 29px;
+  min-height: 120px;
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #3040c4;
+}
+@media screen and (min-width: 321px) {
+  .feedback__title {
+    min-height: 30px;
+    text-align: center;
+    margin-bottom: 28px;
+  }
+}
+.feedback__text {
+  margin: 0;
+  margin-bottom: 32px;
+  min-height: 307px;
+  line-height: 34px;
+  font-size: 24px;
+}
+@media screen and (min-width: 321px) {
+  .feedback__text {
+    max-width: 750px;
+    min-height: 102px;
+    text-align: center;
+    margin-bottom: 34px;
+  }
+}
+.feedback__giver-name {
+  margin: 0;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.feedback__giver-title {
+  margin: 0;
+  margin-bottom: 40px;
+  line-height: 24px;
+  font-size: 16px;
+  color: rgba(43, 41, 45, 0.6);
+}
+@media screen and (min-width: 321px) {
+  .feedback__giver-title {
+    margin-bottom: 38px;
+  }
+}
+.feedback__navigation {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 321px) {
+  .feedback__navigation {
+    margin-bottom: 0;
+  }
+}
+.feedback__navigation-item {
+  margin-right: 19.5px;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  height: 12px;
+  display: flex;
+}
+@media screen and (min-width: 321px) {
+  .feedback__navigation-item {
+    margin-right: 13px;
+    height: 8px;
+  }
+}
+.feedback__navigation-item:last-child {
+  margin-right: 0;
+}
+.feedback__navigation-item .feedback__navigation-item-shape {
+  border-radius: 50px;
+  fill: rgba(43, 41, 45, 0.2);
+  width: 12px;
+  height: 12px;
+}
+@media screen and (min-width: 321px) {
+  .feedback__navigation-item .feedback__navigation-item-shape {
+    width: 8px;
+    height: 8px;
+  }
+}
+.feedback__navigation-item:first-child .feedback__navigation-item-shape {
+  fill: #3040c4;
+}
+@media screen and (min-width: 321px) {
+  .feedback__img {
+    position: absolute;
+    bottom: 0;
+    right: 26px;
+    max-width: 273px;
+    max-height: 243px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

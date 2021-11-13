@@ -1,5 +1,11 @@
 .hiring {
   padding: 50px 15px;
+  @include full-version {
+    padding: 106px 325px 110px 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   &__title {
     margin: 0px;
     margin-bottom: 18px;
@@ -9,6 +15,14 @@
     line-height: 40px;
     text-align: center;
     letter-spacing: -0.357143px;
+    @include full-version {
+      margin-bottom: 20px;
+      max-width: 555px;
+      min-height: 62px;
+      font-size: 56px;
+      line-height: 56px;
+      letter-spacing: -0.5px;
+    }
   }
   &__description {
     margin: 0px;
@@ -17,29 +31,72 @@
     font-size: 24px;
     line-height: 34px;
     text-align: center;
+    @include full-version {
+      margin-bottom: 28px;
+      max-width: 555px;
+      min-height: 72px;
+    }
   }
   &__button {
     margin-bottom: 39px;
+    @include full-version {
+      margin-bottom: 110px;
+      max-width: 247px;
+    }
   }
   &__vacancy {
     min-height: 140px;
     margin-bottom: 15px;
     border: 1px solid $border;
     border-radius: 8px;
+    max-width: 100%;
+    @include full-version {
+      width: 750px;
+      min-height: 81px;
+      margin-bottom: 20px;
+    }
     &:last-child {
       margin-bottom: 0;
     }
   }
   & .vacancy {
     display: flex;
+    &:hover {
+      @include full-version {
+        background-color: $blue;
+      }
+      & .vacancy__button {
+        &-arrow {
+          @include full-version {
+            background-image: url("pictures/arrow-right-white.png");
+          }
+        }
+      }
+      & .position__title {
+        @include full-version {
+          color: $white;
+        }
+      }
+      & .position__location {
+        @include full-version {
+          color: $white;
+        }
+      }
+    }
     &__brief {
       flex: 7;
+      @include full-version {
+        flex: 14.744;
+      }
     }
     &__button {
       flex: 1;
       border:none;
       background-color: $dark-grey-background;
       display: flex;
+      @include full-version {
+        background-color: transparent;
+      }
       &-arrow {
         display: block;
         width: 7px;
@@ -53,11 +110,20 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      @include full-version {
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 26px 0px 26px 25px;
+      }
       &__title {
         margin: 0;
         font-weight: 700;
         font-size: 22px;
         line-height: 28px;
+        @include full-version {
+          min-height: 29px;
+          flex: 2;
+        }
       }
       &__location {
         margin: 0;
@@ -65,6 +131,19 @@
         line-height: 22px;
         color: $grey-transperant;
         min-height: 26px;
+        @include full-version {
+          min-height: 29px;
+          flex: 1;
+          margin-top: 2px;
+          min-height: 26px;
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+      &__hand-cursor {
+        @include full-version {
+          background-image: url("pictures/cursor-hand.png");
+        }
       }
     }
   }

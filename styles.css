@@ -1511,6 +1511,14 @@ body .webpage {
 .hiring {
   padding: 50px 15px;
 }
+@media screen and (min-width: 321px) {
+  .hiring {
+    padding: 106px 325px 110px 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .hiring__title {
   margin: 0px;
   margin-bottom: 18px;
@@ -1521,6 +1529,16 @@ body .webpage {
   text-align: center;
   letter-spacing: -0.357143px;
 }
+@media screen and (min-width: 321px) {
+  .hiring__title {
+    margin-bottom: 20px;
+    max-width: 555px;
+    min-height: 62px;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+  }
+}
 .hiring__description {
   margin: 0px;
   margin-bottom: 30px;
@@ -1529,14 +1547,35 @@ body .webpage {
   line-height: 34px;
   text-align: center;
 }
+@media screen and (min-width: 321px) {
+  .hiring__description {
+    margin-bottom: 28px;
+    max-width: 555px;
+    min-height: 72px;
+  }
+}
 .hiring__button {
   margin-bottom: 39px;
+}
+@media screen and (min-width: 321px) {
+  .hiring__button {
+    margin-bottom: 110px;
+    max-width: 247px;
+  }
 }
 .hiring__vacancy {
   min-height: 140px;
   margin-bottom: 15px;
   border: 1px solid rgba(43, 41, 45, 0.2);
   border-radius: 8px;
+  max-width: 100%;
+}
+@media screen and (min-width: 321px) {
+  .hiring__vacancy {
+    width: 750px;
+    min-height: 81px;
+    margin-bottom: 20px;
+  }
 }
 .hiring__vacancy:last-child {
   margin-bottom: 0;
@@ -1544,14 +1583,44 @@ body .webpage {
 .hiring .vacancy {
   display: flex;
 }
+@media screen and (min-width: 321px) {
+  .hiring .vacancy:hover {
+    background-color: #3040c4;
+  }
+}
+@media screen and (min-width: 321px) {
+  .hiring .vacancy:hover .vacancy__button-arrow {
+    background-image: url("pictures/arrow-right-white.png");
+  }
+}
+@media screen and (min-width: 321px) {
+  .hiring .vacancy:hover .position__title {
+    color: white;
+  }
+}
+@media screen and (min-width: 321px) {
+  .hiring .vacancy:hover .position__location {
+    color: white;
+  }
+}
 .hiring .vacancy__brief {
   flex: 7;
+}
+@media screen and (min-width: 321px) {
+  .hiring .vacancy__brief {
+    flex: 14.744;
+  }
 }
 .hiring .vacancy__button {
   flex: 1;
   border: none;
   background-color: #d5d4d5;
   display: flex;
+}
+@media screen and (min-width: 321px) {
+  .hiring .vacancy__button {
+    background-color: transparent;
+  }
 }
 .hiring .vacancy__button-arrow {
   display: block;
@@ -1566,11 +1635,24 @@ body .webpage {
   flex-direction: column;
   justify-content: space-between;
 }
+@media screen and (min-width: 321px) {
+  .hiring .vacancy .position {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 26px 0px 26px 25px;
+  }
+}
 .hiring .vacancy .position__title {
   margin: 0;
   font-weight: 700;
   font-size: 22px;
   line-height: 28px;
+}
+@media screen and (min-width: 321px) {
+  .hiring .vacancy .position__title {
+    min-height: 29px;
+    flex: 2;
+  }
 }
 .hiring .vacancy .position__location {
   margin: 0;
@@ -1578,6 +1660,21 @@ body .webpage {
   line-height: 22px;
   color: rgba(43, 41, 45, 0.6);
   min-height: 26px;
+}
+@media screen and (min-width: 321px) {
+  .hiring .vacancy .position__location {
+    min-height: 29px;
+    flex: 1;
+    margin-top: 2px;
+    min-height: 26px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media screen and (min-width: 321px) {
+  .hiring .vacancy .position__hand-cursor {
+    background-image: url("pictures/cursor-hand.png");
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

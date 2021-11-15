@@ -2,7 +2,7 @@
 .features {
   display: none;
   position: relative;
-  padding-top: 5px;
+  padding-bottom: 103px;
   @include full-version {
     display: flex;
   }
@@ -11,9 +11,9 @@
     position: absolute;
     top: 258px;
   }
-  &__info-section {
+  & .info {
     padding-left: 126px;
-    &_upper-title {
+    &__upper-title {
       font-weight: 700;
       font-size: 22px;
       line-height: 34px;
@@ -22,7 +22,7 @@
       padding-left: 2px;
       min-height: 34px;
     }
-    &_big-title {
+    &__big-title {
       font-weight: 700;
       font-size: 56px;
       line-height: 56px;
@@ -31,7 +31,7 @@
       padding-top: 24px;
       max-width: 462px;
     }
-    &_description {
+    &__selling-text_main {
       font-size: 24px;
       line-height: 34px;
       padding-top: 30px;
@@ -41,21 +41,26 @@
       margin: 0;
       min-height: 132px;
     }
-    &_blue-title-container {
+    & .blue-title-container {
       padding-top: 42px;
       display: flex;
       padding-left: 3px;
       min-height: 70px;
-      & > .features__info-section_blue-title {
+      align-items: flex-start;
+      &__title {
         margin: 0;
         padding-left: 15px;
         font-weight: 700;
         font-size: 22px;
         line-height: 26px;
         color: $blue;
+        text-decoration: none;
+        &:hover {
+        cursor: pointer;
+      }
       }
     }
-    &_blue-title-text {
+    &__selling-text_second {
       font-size: 18px;
       line-height: 26px;
       max-width: 459px;
@@ -66,31 +71,28 @@
       padding-left: 3px;
       min-height: 81px;
     }
-  }
-  &__selling-point-container {
-    border-bottom: 1px solid $grey-line;
-    padding-top: 20px;
-    padding-bottom: 22px;
-    display: flex;
-    padding-left: 4px;
-    min-height: 71px;
-    &_text {
-      font-weight: 700;
-      font-size: 22px;
-      line-height: 26px;
-      padding-left: 15px;
-      padding-top: 3px;
+    & .selling-point {
+      border-bottom: 1px solid $grey-line;
+      padding-top: 20px;
+      padding-bottom: 22px;
+      display: flex;
+      padding-left: 4px;
+      min-height: 71px;
+      &__text {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        padding-left: 15px;
+        padding-top: 3px;
+      }
     }
-    &:last-child > .features__selling-point-container_text {
-      padding-top: 2px;
+    & .selling-point_bottom {
+      padding-top: 21px;
+      padding-bottom: 24px;
+
     }
-  }
-  &__selling-point-container_bottom {
-    padding-top: 21px;
-    padding-bottom: 24px;
   }
   &__banner {
-    position: relative;
     margin-left: auto;
     filter: drop-shadow(0px 4px 16px rgba(44, 50, 65, 0.08));
     max-height: 597px;

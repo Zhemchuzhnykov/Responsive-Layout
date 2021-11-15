@@ -69,7 +69,7 @@
       & .vacancy__button {
         &-arrow {
           @include full-version {
-            background-image: url("pictures/arrow-right-white.png");
+            background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png");
           }
         }
       }
@@ -103,7 +103,7 @@
         width: 7px;
         height: 12px;
         margin: auto;
-        background-image: url("pictures/arrow-right-grey.png");
+        background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png");
       }
     }
     & .position {

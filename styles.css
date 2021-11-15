@@ -204,7 +204,7 @@ body .webpage {
 .features {
   display: none;
   position: relative;
-  padding-top: 5px;
+  padding-bottom: 103px;
 }
 @media screen and (min-width: 321px) {
   .features {
@@ -216,10 +216,10 @@ body .webpage {
   position: absolute;
   top: 258px;
 }
-.features__info-section {
+.features .info {
   padding-left: 126px;
 }
-.features__info-section_upper-title {
+.features .info__upper-title {
   font-weight: 700;
   font-size: 22px;
   line-height: 34px;
@@ -228,7 +228,7 @@ body .webpage {
   padding-left: 2px;
   min-height: 34px;
 }
-.features__info-section_big-title {
+.features .info__big-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 56px;
@@ -237,7 +237,7 @@ body .webpage {
   padding-top: 24px;
   max-width: 462px;
 }
-.features__info-section_description {
+.features .info__selling-text_main {
   font-size: 24px;
   line-height: 34px;
   padding-top: 30px;
@@ -247,21 +247,26 @@ body .webpage {
   margin: 0;
   min-height: 132px;
 }
-.features__info-section_blue-title-container {
+.features .info .blue-title-container {
   padding-top: 42px;
   display: flex;
   padding-left: 3px;
   min-height: 70px;
+  align-items: flex-start;
 }
-.features__info-section_blue-title-container > .features__info-section_blue-title {
+.features .info .blue-title-container__title {
   margin: 0;
   padding-left: 15px;
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
   color: #3040c4;
+  text-decoration: none;
 }
-.features__info-section_blue-title-text {
+.features .info .blue-title-container__title:hover {
+  cursor: pointer;
+}
+.features .info__selling-text_second {
   font-size: 18px;
   line-height: 26px;
   max-width: 459px;
@@ -272,7 +277,7 @@ body .webpage {
   padding-left: 3px;
   min-height: 81px;
 }
-.features__selling-point-container {
+.features .info .selling-point {
   border-bottom: 1px solid rgba(43, 41, 45, 0.15);
   padding-top: 20px;
   padding-bottom: 22px;
@@ -280,22 +285,18 @@ body .webpage {
   padding-left: 4px;
   min-height: 71px;
 }
-.features__selling-point-container_text {
+.features .info .selling-point__text {
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
   padding-left: 15px;
   padding-top: 3px;
 }
-.features__selling-point-container:last-child > .features__selling-point-container_text {
-  padding-top: 2px;
-}
-.features__selling-point-container_bottom {
+.features .info .selling-point_bottom {
   padding-top: 21px;
   padding-bottom: 24px;
 }
 .features__banner {
-  position: relative;
   margin-left: auto;
   filter: drop-shadow(0px 4px 16px rgba(44, 50, 65, 0.08));
   max-height: 597px;
@@ -1571,7 +1572,7 @@ body .webpage {
 }
 @media screen and (min-width: 321px) {
   .hiring .vacancy:hover .vacancy__button-arrow {
-    background-image: url("pictures/arrow-right-white.png");
+    background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png");
   }
 }
 @media screen and (min-width: 321px) {
@@ -1608,7 +1609,7 @@ body .webpage {
   width: 7px;
   height: 12px;
   margin: auto;
-  background-image: url("pictures/arrow-right-grey.png");
+  background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png");
 }
 .hiring .vacancy .position {
   padding: 19px 20px;

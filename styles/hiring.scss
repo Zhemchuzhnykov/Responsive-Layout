@@ -64,6 +64,7 @@
     &:hover {
       @include full-version {
         background-color: $blue;
+        cursor: pointer;
       }
       & .vacancy__button {
         &-arrow {
@@ -110,6 +111,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      position: relative;
       @include full-version {
         flex-direction: row;
         justify-content: flex-start;
@@ -138,11 +140,6 @@
           min-height: 26px;
           font-size: 18px;
           line-height: 24px;
-        }
-      }
-      &__hand-cursor {
-        @include full-version {
-          background-image: url("pictures/cursor-hand.png");
         }
       }
     }

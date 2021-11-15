@@ -97,6 +97,19 @@
         margin-bottom: 0px;
         width: 262px;
       }
+      &:nth-child(2) {
+        background-color: $blue;
+        @include full-version {
+          position: relative;
+          background-color: $white;
+        }
+        & > .audience__pics-unit-subtitle {
+          color: $white;
+          @include full-version {
+            color: $text;
+          }
+        }
+      }
       & > .audience__pics-unit-subtitle {
         text-align: center;
         height: 28px;
@@ -105,21 +118,10 @@
         font-weight: 700;
         margin-top: 22px;
       }
-      &:nth-child(2) {
-        background-color: $blue;
+      &:hover {
         @include full-version {
-          position: relative;
-        }
-        & > .audience__pics-unit-img_hand {
-          display: none;
-          width: 20px;
-          height: 21px;
-          @include full-version {
-            display: block;
-            position: absolute;
-            left: 18px;
-            bottom: 2px;
-          }
+          cursor: pointer;
+          background-color: $blue;
         }
         & > .audience__pics-unit-subtitle {
           color: $white;

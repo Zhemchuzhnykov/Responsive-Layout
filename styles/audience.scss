@@ -97,19 +97,6 @@
         margin-bottom: 0px;
         width: 262px;
       }
-      &:nth-child(2) {
-        background-color: $blue;
-        @include full-version {
-          position: relative;
-          background-color: $white;
-        }
-        & > .audience__pics-unit-subtitle {
-          color: $white;
-          @include full-version {
-            color: $text;
-          }
-        }
-      }
       & > .audience__pics-unit-subtitle {
         text-align: center;
         height: 28px;
@@ -119,10 +106,8 @@
         margin-top: 22px;
       }
       &:hover {
-        @include full-version {
           cursor: pointer;
           background-color: $blue;
-        }
         & > .audience__pics-unit-subtitle {
           color: $white;
         }

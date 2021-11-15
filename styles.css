@@ -1355,23 +1355,6 @@ body .webpage {
     width: 262px;
   }
 }
-.audience__pics-unit:nth-child(2) {
-  background-color: #3040c4;
-}
-@media screen and (min-width: 321px) {
-  .audience__pics-unit:nth-child(2) {
-    position: relative;
-    background-color: white;
-  }
-}
-.audience__pics-unit:nth-child(2) > .audience__pics-unit-subtitle {
-  color: white;
-}
-@media screen and (min-width: 321px) {
-  .audience__pics-unit:nth-child(2) > .audience__pics-unit-subtitle {
-    color: #2b292d;
-  }
-}
 .audience__pics-unit > .audience__pics-unit-subtitle {
   text-align: center;
   height: 28px;
@@ -1380,11 +1363,9 @@ body .webpage {
   font-weight: 700;
   margin-top: 22px;
 }
-@media screen and (min-width: 321px) {
-  .audience__pics-unit:hover {
-    cursor: pointer;
-    background-color: #3040c4;
-  }
+.audience__pics-unit:hover {
+  cursor: pointer;
+  background-color: #3040c4;
 }
 .audience__pics-unit:hover > .audience__pics-unit-subtitle {
   color: white;

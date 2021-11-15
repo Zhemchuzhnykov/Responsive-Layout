@@ -3,13 +3,12 @@
   display: flex;
   flex-direction: column;
   @include full-version {
-    padding: 76px 0px 0px 126px;
+    padding: 76px 0px 126px 126px;
     position: relative;
   }
   &-content {
     padding: 35px 15px 33px 15px;
     @include full-version {
-      position: absolute;
       z-index: 1;
       padding: 0;
     }
@@ -49,17 +48,20 @@
       }
     }
   }
-  &-banner {
-    padding-bottom: 36px;
+  &__banner {
+    margin-bottom: 36px;
     width: 100%;
+    height: 180px;
+    background-image: url("pictures/headline-banner-mobile.png");
     @include full-version {
       margin-top: 8px;
       position: absolute;
       right: 25px;
       margin-bottom: 77px;
       padding-bottom: 0;
-      max-width: 796px;
-      max-height: 448px;
+      width: 796px;
+      height: 448px;
+      background-image: url("pictures/headline-banner-desktop.png");
     }
   }
 }

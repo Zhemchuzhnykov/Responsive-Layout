@@ -6,23 +6,24 @@
   @include full-version {
     padding-top: 39px;
     min-height: 710px;
+    position: relative;
   }
 }
 .header {
   min-height: 64px;
-  width: 100%;
+  max-width: 100%;
   background-color: $white;
   display: flex;
+  align-items: center;
   @include full-version {
     min-height: 62px;
     margin: 0;
     background-color: $pink-background;
+    max-width: 1140px;
+    margin-left: 130px;
   }
   &-logo {
     display: flex;
-    @include full-version {
-      padding-left: 130px;
-    }
     & .logo__image {
       display: none;
       @include full-version {
@@ -69,10 +70,10 @@
     display: none;
     @include full-version {
       margin-left: auto;
-      padding-top: 7px;
       padding-right: 56px;
       display: flex;
       max-width: 348px;
+      align-items: center;
     }
       &__item {
         
@@ -98,7 +99,6 @@
     }
     &-button {
       display: none;
-      margin-right: 130px;
       background-color: $blue;
       color: $white;
       width: 160px;

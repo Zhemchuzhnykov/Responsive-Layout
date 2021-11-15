@@ -3,8 +3,9 @@
   display: flex;
   flex-direction: column;
   @include full-version {
-    padding: 76px 0px 126px 126px;
-    position: relative;
+    padding: 76px 0px 126px 0px;
+    margin-left: 126px;
+    max-width: 1140px;
   }
   &-content {
     padding: 35px 15px 33px 15px;

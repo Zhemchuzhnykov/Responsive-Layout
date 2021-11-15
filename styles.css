@@ -602,29 +602,28 @@ body .webpage {
   .top-section {
     padding-top: 39px;
     min-height: 710px;
+    position: relative;
   }
 }
 
 .header {
   min-height: 64px;
-  width: 100%;
+  max-width: 100%;
   background-color: white;
   display: flex;
+  align-items: center;
 }
 @media screen and (min-width: 321px) {
   .header {
     min-height: 62px;
     margin: 0;
     background-color: #f3c6bd;
+    max-width: 1140px;
+    margin-left: 130px;
   }
 }
 .header-logo {
   display: flex;
-}
-@media screen and (min-width: 321px) {
-  .header-logo {
-    padding-left: 130px;
-  }
 }
 .header-logo .logo__image {
   display: none;
@@ -681,10 +680,10 @@ body .webpage {
 @media screen and (min-width: 321px) {
   .header-nav {
     margin-left: auto;
-    padding-top: 7px;
     padding-right: 56px;
     display: flex;
     max-width: 348px;
+    align-items: center;
   }
 }
 .header-nav__item {
@@ -709,7 +708,6 @@ body .webpage {
 }
 .header-button {
   display: none;
-  margin-right: 130px;
   background-color: #3040c4;
   color: white;
   width: 160px;
@@ -748,8 +746,9 @@ body .webpage {
 }
 @media screen and (min-width: 321px) {
   .headline {
-    padding: 76px 0px 126px 126px;
-    position: relative;
+    padding: 76px 0px 126px 0px;
+    margin-left: 126px;
+    max-width: 1140px;
   }
 }
 .headline-content {

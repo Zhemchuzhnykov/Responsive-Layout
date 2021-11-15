@@ -2,6 +2,7 @@
 .headline {
   display: flex;
   flex-direction: column;
+  margin-top: 35px;
   @include full-version {
     margin: 76px 0px 126px 126px;
     max-width: 1140px;
@@ -13,7 +14,7 @@
       padding: 0;
     }
     &__title {
-      margin: 35px 0px 24px 0px;
+      margin: 0px 0px 24px 0px;
       font-weight: 700;
       line-height: 50px;
       font-size: 50px;

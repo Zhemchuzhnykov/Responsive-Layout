@@ -746,8 +746,7 @@ body .webpage {
 }
 @media screen and (min-width: 321px) {
   .headline {
-    padding: 76px 0px 126px 0px;
-    margin-left: 126px;
+    margin: 76px 0px 126px 126px;
     max-width: 1140px;
   }
 }

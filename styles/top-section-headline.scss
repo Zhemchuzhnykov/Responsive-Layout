@@ -51,17 +51,12 @@
   &__banner {
     margin-bottom: 36px;
     width: 100%;
-    height: 180px;
-    background-image: url("pictures/headline-banner-mobile.png");
     @include full-version {
       margin-top: 8px;
       position: absolute;
       right: 25px;
-      margin-bottom: 77px;
-      padding-bottom: 0;
-      width: 796px;
-      height: 448px;
-      background-image: url("pictures/headline-banner-desktop.png");
+      margin-bottom: 0;
+      max-width: 796px;
     }
   }
 }

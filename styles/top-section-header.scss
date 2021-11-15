@@ -70,18 +70,19 @@
     display: none;
     @include full-version {
       margin-left: auto;
-      padding-right: 56px;
+      margin-right: 56px;
       display: flex;
       max-width: 348px;
       align-items: center;
+      width: 292px;
+      justify-content: space-between;
     }
       &__item {
-        
         color: $text;
         text-decoration: none;
         line-height: 25px;
         font-size: 18px;
-        padding-right: 38.7px;
+        // padding-right: 50px;
         &:nth-last-child(1) {
           padding-right: 0;
         }

@@ -680,10 +680,12 @@ body .webpage {
 @media screen and (min-width: 321px) {
   .header-nav {
     margin-left: auto;
-    padding-right: 56px;
+    margin-right: 56px;
     display: flex;
     max-width: 348px;
     align-items: center;
+    width: 292px;
+    justify-content: space-between;
   }
 }
 .header-nav__item {
@@ -691,7 +693,6 @@ body .webpage {
   text-decoration: none;
   line-height: 25px;
   font-size: 18px;
-  padding-right: 38.7px;
 }
 .header-nav__item:nth-last-child(1) {
   padding-right: 0;
@@ -761,7 +762,8 @@ body .webpage {
   }
 }
 .headline-content__title {
-  margin: 0px 0px 24px 0px;
+  margin: 0;
+  margin-bottom: 22px;
   font-weight: 700;
   line-height: 50px;
   font-size: 50px;

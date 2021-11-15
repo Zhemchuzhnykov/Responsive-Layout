@@ -751,7 +751,7 @@ body .webpage {
   }
 }
 .headline-content {
-  padding: 35px 15px 33px 15px;
+  padding: 0px 15px 33px 15px;
 }
 @media screen and (min-width: 321px) {
   .headline-content {
@@ -760,11 +760,10 @@ body .webpage {
   }
 }
 .headline-content__title {
-  margin: 0;
+  margin: 35px 0px 24px 0px;
   font-weight: 700;
   line-height: 50px;
   font-size: 50px;
-  margin-bottom: 24px;
   letter-spacing: -0.3125px;
   min-height: 205px;
 }

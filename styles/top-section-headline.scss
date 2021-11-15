@@ -7,17 +7,16 @@
     max-width: 1140px;
   }
   &-content {
-    padding: 35px 15px 33px 15px;
+    padding: 0px 15px 33px 15px;
     @include full-version {
       z-index: 1;
       padding: 0;
     }
     &__title {
-      margin: 0;
+      margin: 35px 0px 24px 0px;
       font-weight: 700;
       line-height: 50px;
       font-size: 50px;
-      margin-bottom: 24px;
       letter-spacing: -0.3125px;
       min-height: 205px;
       @include full-version {

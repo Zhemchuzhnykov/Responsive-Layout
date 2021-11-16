@@ -1,4 +1,4 @@
-.free-trial {
+.order {
   padding: 50px 15px;
   background-color: $grey-background;
   display: flex;
@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
   }
-  &__text .free-trial__title {
+  &__text .order__title {
     margin: 40px 0px 18px 0px;
     max-width: 100%;
     height: 80px;
@@ -34,7 +34,7 @@
       max-width: 555px;
     }
   }
-  &__text .free-trial__paragraph {
+  &__text .order__paragraph {
     margin: 0px 0px 40px 0px;
     width: 100%;
     height: 167px;
@@ -46,7 +46,7 @@
       margin: 12px 0px 26px 121.59px;
     }
   }
-  &__text .free-trial__action-buttons {
+  &__text .order__action-buttons {
     display: flex;
     flex-direction: column;
     @include full-version {
@@ -54,7 +54,7 @@
       margin-left:123.59px;
     }
   }
-  &__text .free-trial__action-buttons > .free-trial__action-buttons_email {
+  &__text .order__action-buttons > .order__action-buttons_email {
     margin-bottom: 12px;
     height: 48px;
     width: 100%;
@@ -72,13 +72,13 @@
       color: $text;
     }
   }
-  &__text .free-trial__action-buttons > .free-trial__action-buttons_get-started {
+  &__text .order__action-buttons > .order__action-buttons_get-started {
     margin-bottom: 10px;
     @include full-version {
       margin: 0px 0px 0px 10px;
     }
   }
-  &__text .free-trial__terms {
+  &__text .order__terms {
     margin: 0;
     width: 100%;
     height: 44px;

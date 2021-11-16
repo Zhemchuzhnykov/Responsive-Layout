@@ -603,6 +603,7 @@ body .webpage {
     padding-top: 39px;
     min-height: 710px;
     position: relative;
+    align-items: center;
   }
 }
 
@@ -618,8 +619,7 @@ body .webpage {
     min-height: 62px;
     margin: 0;
     background-color: #f3c6bd;
-    max-width: 1140px;
-    margin-left: 130px;
+    width: 1140px;
   }
 }
 .header-logo {
@@ -748,8 +748,8 @@ body .webpage {
 }
 @media screen and (min-width: 1400px) {
   .headline {
-    margin: 76px 0px 126px 126px;
-    max-width: 1140px;
+    margin: 76px 0px 126px 0px;
+    width: 1140px;
   }
 }
 .headline-content {

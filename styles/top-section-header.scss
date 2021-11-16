@@ -7,6 +7,7 @@
     padding-top: 39px;
     min-height: 710px;
     position: relative;
+    align-items: center;
   }
 }
 .header {
@@ -19,8 +20,7 @@
     min-height: 62px;
     margin: 0;
     background-color: $pink-background;
-    max-width: 1140px;
-    margin-left: 130px;
+    width: 1140px;
   }
   &-logo {
     display: flex;

@@ -603,7 +603,6 @@ body .webpage {
     padding-top: 39px;
     min-height: 710px;
     position: relative;
-    align-items: center;
   }
 }
 
@@ -617,7 +616,7 @@ body .webpage {
 @media screen and (min-width: 1400px) {
   .header {
     min-height: 62px;
-    margin: 0;
+    margin: 0 auto;
     background-color: #f3c6bd;
     width: 1140px;
   }
@@ -748,7 +747,7 @@ body .webpage {
 }
 @media screen and (min-width: 1400px) {
   .headline {
-    margin: 76px 0px 126px 0px;
+    margin: 76px auto 126px auto;
     width: 1140px;
   }
 }

@@ -4,7 +4,7 @@
   flex-direction: column;
   margin-top: 35px;
   @include full-version {
-    margin: 76px 0px 126px 0px;
+    margin: 76px auto 126px auto;
     width: 1140px;
   }
   &-content {

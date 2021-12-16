@@ -2,7 +2,7 @@
 
 ---
 
-The breakpoint is **360px**: it changes at 360px from the mobile to the desktop version which remains the same at any further resolution.
+The breakpoint is **1400px**: it changes at 1400px from the mobile to the desktop version. Before the breakpoint 1400px the page remains at the version initially designed for the resolution 320px as it is a learning project for mastering the adaptive layout techniques and technologies.
 
 ## The tech stack is:
 

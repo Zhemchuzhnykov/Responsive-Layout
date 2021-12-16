@@ -21,7 +21,7 @@
       display: flex;
       flex: 1;
       @include full-version {
-        border: none !important;
+        border: none;
       }
       &:nth-child(3),
       .customers-row__item:last-child {

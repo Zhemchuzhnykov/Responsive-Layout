@@ -3,7 +3,6 @@
 }
 .advantages-mob-item {
   padding: 0px 15px 40px 15px;
-  position: relative;
 }
 .advantages-mob-item:last-child {
   padding-bottom: 0;
@@ -51,6 +50,7 @@
 }
 .advantages-mob-item__graphics-picture {
   max-width: 100%;
+  margin: auto;
 }
 .advantages-mob-item__graphics-subtitle {
   margin-top: 20px;
@@ -80,8 +80,6 @@
 
 body {
   font-family: "Work Sans", sans-serif;
-  display: flex;
-  flex-direction: column;
   color: #2b292d;
 }
 body .webpage {
@@ -162,7 +160,7 @@ body .webpage {
 }
 @media screen and (min-width: 1400px) {
   .customers .customers-row__item {
-    border: none !important;
+    border: none;
   }
 }
 .customers .customers-row__item:nth-child(3),
@@ -261,7 +259,6 @@ body .webpage {
   font-size: 22px;
   line-height: 26px;
   color: #3040c4;
-  text-decoration: none;
 }
 .features .info .blue-title-container__title:hover {
   cursor: pointer;
@@ -304,13 +301,11 @@ body .webpage {
 
 .footer {
   width: 100%;
-  position: relative;
   padding: 40px 0px 22px 0px;
 }
 @media screen and (min-width: 1400px) {
   .footer {
     padding: 43px 0px 0px 0px;
-    position: static;
   }
 }
 .footer-main {
@@ -372,10 +367,8 @@ body .webpage {
   line-height: 25px;
   font-size: 20px;
   font-weight: 700;
-  display: inline-block;
 }
 .footer-main .about-company .footer-logo__text_transperant {
-  display: block;
   font-size: 18px;
   line-height: 25px;
   color: rgba(43, 41, 45, 0.6);
@@ -399,7 +392,6 @@ body .webpage {
   display: flex;
 }
 .footer-main .about-company .downloads__link {
-  text-decoration: none;
   height: 40px;
 }
 .footer-main .about-company .downloads__link:nth-child(1) {
@@ -566,7 +558,6 @@ body .webpage {
 .service-description__article:nth-child(1) {
   margin-bottom: 20px;
   height: 180px;
-  justify-content: space-around;
 }
 @media screen and (min-width: 1400px) {
   .service-description__article:nth-child(1) {
@@ -595,8 +586,6 @@ body .webpage {
 .top-section {
   background-color: #f3c6bd;
   width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 @media screen and (min-width: 1400px) {
   .top-section {
@@ -701,30 +690,30 @@ body .webpage {
 }
 .header-nav__item:last-child .nav-arrow {
   display: inline-block;
-  min-height: 5px;
+  height: 5px;
   width: 8px;
   margin-left: 11px;
   vertical-align: middle;
 }
 .header-button {
   display: none;
-  background-color: #3040c4;
-  color: white;
-  width: 160px;
-  height: 48px;
-  font-size: 18px;
-  font-weight: 700;
-  border: none;
-  border-radius: 2px;
 }
 @media screen and (min-width: 1400px) {
   .header-button {
     display: block;
+    background-color: #3040c4;
+    color: white;
+    width: 160px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    border-radius: 2px;
   }
 }
 .header__mobile-menu {
   width: 59px;
-  min-height: 64px;
+  height: 64px;
   border-left: 1px solid rgba(43, 41, 45, 0.15);
   margin-left: auto;
   display: flex;
@@ -807,10 +796,10 @@ body .webpage {
 }
 @media screen and (min-width: 1400px) {
   .headline__banner {
+    margin-bottom: 0;
     margin-top: 8px;
     position: absolute;
     right: 25px;
-    margin-bottom: 0;
     max-width: 796px;
   }
 }
@@ -912,7 +901,6 @@ body .webpage {
 }
 .order__text .order__terms {
   margin: 0;
-  width: 100%;
   height: 44px;
   font-size: 14px;
   line-height: 22px;
@@ -922,7 +910,6 @@ body .webpage {
   .order__text .order__terms {
     margin-left: 122.59px;
     max-width: 497px;
-    letter-spacing: 0.03px;
     margin-top: 10px;
   }
 }
@@ -1048,7 +1035,6 @@ body .webpage {
   .inbox-feature__text .inbox-feature__feedback-text {
     max-width: 459px;
     min-height: 85px;
-    margin-left: 1px;
   }
 }
 .inbox-feature__text .inbox-feature__feedback-giver {
@@ -1056,7 +1042,7 @@ body .webpage {
   align-items: flex-start;
 }
 .inbox-feature__text .inbox-feature__feedback-giver-pic {
-  margin-top: 2px;
+  margin-top: 3px;
 }
 .inbox-feature__text .inbox-feature__feedback-giver-identity {
   margin-left: 11px;
@@ -1452,7 +1438,6 @@ body .webpage {
   border: none;
   padding: 0;
   height: 12px;
-  display: flex;
 }
 @media screen and (min-width: 1400px) {
   .feedback__navigation-item {
@@ -1615,7 +1600,6 @@ body .webpage {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
 }
 @media screen and (min-width: 1400px) {
   .hiring .vacancy .position {
@@ -1645,10 +1629,8 @@ body .webpage {
 }
 @media screen and (min-width: 1400px) {
   .hiring .vacancy .position__location {
-    min-height: 29px;
     flex: 1;
     margin-top: 2px;
-    min-height: 26px;
     font-size: 18px;
     line-height: 24px;
   }

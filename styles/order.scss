@@ -51,7 +51,7 @@
     flex-direction: column;
     @include full-version {
       flex-direction: row;
-      margin-left:123.59px;
+      margin-left: 123.59px;
     }
   }
   &__text .order__action-buttons > .order__action-buttons_email {
@@ -80,15 +80,13 @@
   }
   &__text .order__terms {
     margin: 0;
-    width: 100%;
     height: 44px;
     font-size: 14px;
     line-height: 22px;
-    color: $grey-transperant;
+    color: $text-transperant;
     @include full-version {
       margin-left: 122.59px;
       max-width: 497px;
-      letter-spacing: 0.03px;
       margin-top: 10px;
     }
     &-link {

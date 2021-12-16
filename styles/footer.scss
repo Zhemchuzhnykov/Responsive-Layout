@@ -1,11 +1,9 @@
 
 .footer {
   width: 100%;
-  position: relative;
   padding: 40px 0px 22px 0px;
   @include full-version {
     padding: 43px 0px 0px 0px;
-    position: static;
   }
   &-main {
   width: 100%;
@@ -54,13 +52,11 @@
           line-height: 25px;
           font-size: 20px;
           font-weight: 700;
-          display: inline-block;
         }
         &_transperant {
-          display: block;
           font-size: 18px;
           line-height: 25px;
-          color: $grey-transperant;
+          color: $text-transperant;
         }
       }
     }
@@ -72,7 +68,7 @@
         line-height: 26px;
         font-size: 18px;
         margin-top: 26px;
-        color: $grey-transperant;
+        color: $text-transperant;
         margin-bottom: 25px;
         display: block;
       }
@@ -80,7 +76,6 @@
     & .downloads {
       display: flex;
       &__link {
-        text-decoration: none;
         height: 40px;
         &:nth-child(1) {
           margin-right: 10px;
@@ -138,7 +133,7 @@
         }
       }
       &-item {
-        color: $grey-transperant;
+        color: $text-transperant;
         font-size: 18px;
         line-height: 30px;
         margin-bottom: 7px;
@@ -180,7 +175,7 @@
       }
       &__item {
         text-decoration: none;
-        color: $grey-transperant;
+        color: $text-transperant;
         font-size: 14px;
         line-height: 22px;
         height: 22px;

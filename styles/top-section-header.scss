@@ -1,8 +1,6 @@
 .top-section {
   background-color: $pink-background;
   width: 100%;
-  display: flex;
-  flex-direction: column;
   @include full-version {
     padding-top: 39px;
     min-height: 710px;
@@ -59,7 +57,7 @@
           display: block;
           font-size: 18px;
           line-height: 25px;
-          color: $grey-transperant;
+          color: $text-transperant;
           opacity: 0.6;
         }
       }
@@ -81,7 +79,6 @@
         text-decoration: none;
         line-height: 25px;
         font-size: 18px;
-        // padding-right: 50px;
         &:nth-last-child(1) {
           padding-right: 0;
         }
@@ -90,7 +87,7 @@
         }
         &:last-child .nav-arrow  {
           display: inline-block;
-          min-height: 5px;
+          height: 5px;
           width: 8px;
           margin-left: 11px;
           vertical-align: middle;
@@ -99,21 +96,21 @@
     }
     &-button {
       display: none;
-      background-color: $blue;
-      color: $white;
-      width: 160px;
-      height: 48px;
-      font-size: 18px;
-      font-weight: 700;
-      border: none;
-      border-radius: 2px;
       @include full-version {
         display: block;
+        background-color: $blue;
+        color: $white;
+        width: 160px;
+        height: 48px;
+        font-size: 18px;
+        font-weight: 700;
+        border: none;
+        border-radius: 2px;
       }
     }
     &__mobile-menu {
       width: 59px;
-      min-height: 64px;
+      height: 64px;
       border-left: 1px solid $grey-line;
       margin-left: auto;
       display: flex;

@@ -28,24 +28,18 @@ body {
   }
 }
 .learn-more-button {
-  width: 100%;
-  height: 48px;
   color: $blue;
-  border-radius: 2px;
   font-size: 18px;
   font-weight: 700;
+  height: 48px;
+  width: 100%;
+  border-radius: 2px;
   border: none;
-  background: linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.05) 0%,
-      rgba(255, 255, 255, 1e-5) 100%
-    ),
-    $white;
-  background-blend-mode: overlay, normal;
+  background: $white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05),
-    inset 0px 1px 0px rgba(255, 255, 255, 0.1);
-    @include full-version {
+  inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  @include full-version {
       max-width: 158px;
       margin-left: 10px;
-    }
+  }
 }

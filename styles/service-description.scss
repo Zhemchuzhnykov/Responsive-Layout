@@ -1,7 +1,7 @@
 .service-description {
   width: 100%;
-  padding: 46px 15px;
   background-color: $grey-background;
+  padding: 46px 15px;
   @include full-version {
     display: flex;
     padding: 77px 131px 76px 130px;
@@ -10,18 +10,18 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 136px;
+    height: 180px;
     @include full-version {
       flex-direction: column;
       height: 102px;
+      width: 555px;
+      margin-right: 29px;
     }
-    &:nth-child(1) {
-      height: 180px;
-      margin-bottom: 20px;
+    &_forwhom {
+      height: 136px;
       @include full-version {
         height: 102px;
-        margin-right: 29px;
-        margin-bottom: 0;
+        margin-right: 0;
       }
     }
     & .service-description__title {

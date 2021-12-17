@@ -1,4 +1,3 @@
-
 .footer {
   width: 100%;
   padding: 40px 0px 22px 0px;
@@ -9,7 +8,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
     @include full-version {
     flex-direction: row;
     padding-left: 130px;
@@ -41,19 +40,19 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        height: 51px;
         margin-top: 20px;
         margin-bottom: 31px;
-        height: 51px;
         @include full-version {
           align-items: baseline;
           margin: 0;
         }
-        &_title {
-          line-height: 25px;
+        &-title {
           font-size: 20px;
           font-weight: 700;
+          line-height: 25px;
         }
-        &_transperant {
+        &-transperant {
           font-size: 18px;
           line-height: 25px;
           color: $text-transperant;
@@ -64,12 +63,12 @@
       display: none;
       @include full-version {
         display: block;
+        font-size: 18px;
+        color: $text-transperant;
         max-width: 360px;
         height: 85px;
         line-height: 26px;
-        font-size: 18px;
         margin-top: 26px;
-        color: $text-transperant;
         margin-bottom: 25px;
       }
     }
@@ -77,7 +76,7 @@
       display: flex;
       &__link {
         height: 40px;
-        &:nth-child(1) {
+        &_apple {
           margin-right: 10px;
         }
       }
@@ -101,7 +100,7 @@
       margin-left: 126px;
       padding: 0;
     }
-    &__product {
+    &__column_product {
       width: 100%;
       margin-bottom: 30px;
       @include full-version {
@@ -110,13 +109,15 @@
         margin: 0px 29px 0px 0px;
       }
     }
-    &__column .footer-nav__title {
-      font-weight: 700;
-      font-size: 22px;
-      line-height: 28px;
-      margin: 0px 0px 18px 0px;
+    &__column {
+      &-title {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        margin: 0px 0px 18px 0px;
+      }
     }
-    &__column .footer-nav__list {
+    &__column-list {
       list-style-type: none;
       padding: 0;
       margin: 0;
@@ -127,15 +128,15 @@
         }
       }
       &_company {
-        height: 136px;
+        height: 185px;
         @include full-version {
-          height: 185px;
+          height: 136px;
         }
       }
       &-item {
-        color: $text-transperant;
         font-size: 18px;
         line-height: 30px;
+        color: $text-transperant;
         margin-bottom: 7px;
         @include full-version {
           margin-bottom: 6px;
@@ -148,54 +149,10 @@
   }
   &-line-desktop {
     display: none;
-    width: 100%;
-    border-bottom: 1px solid $grey-line;
     @include full-version {
       display: block;
-    }
-  }
-  &-bottom {
-    display: flex;
-    flex-direction: column;
-    padding: 0px 15px 0px 15px;
-    @include full-version {
-      flex-direction: row;
-      align-items: center;
       width: 100%;
-      padding: 13px 0px 15px 0px;
-    }
-    & .terms {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 30px;
-      width: 180px;
-      height: 22px;
-      @include full-version {
-        margin: 0px 0px 0px 130px;
-      }
-      &__item {
-        color: $text-transperant;
-        font-size: 14px;
-        line-height: 22px;
-        height: 22px;
-        text-decoration: none;
-      }
-    }
-    & .social-networks {
-      height: 18px;
-      @include full-version {
-        margin-left: auto;
-      }
-      &__item {
-        text-decoration: none;
-        padding-right: 20px;
-        line-height: 18px;
-      }
-      &__item:nth-last-child(1) {
-        @include full-version {
-          padding-right: 132px
-        }
-      }
+      border-bottom: 1px solid $grey-line;
     }
   }
 }

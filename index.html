@@ -47,23 +47,23 @@
               <div class="logo__text_description">Startup landing template</div>
             </div>
           </div>
-          <nav class="header-nav">
-            <a href="#" class="header-nav__item header-nav__item_selected">
+          <nav class="header__nav">
+            <a href="#" class="header__nav-item header__nav-item_selected">
               Home
             </a>
-            <a href="#" class="header-nav__item">Stories</a>
-            <a href="#" class="header-nav__item"
+            <a href="#" class="header__nav-item">Stories</a>
+            <a href="#" class="header__nav-item header__nav-item_library"
               >Library
               <img
                 src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png"
                 alt="Open menu"
-                class="nav-arrow"
+                class="header__nav-arrow"
               />
             </a>
           </nav>
-          <button class="header-button">Get Started</button>
+          <button class="header__button">Get Started</button>
           <div class="header__mobile-menu">
-            <button class="header__mobile-menu_button">
+            <button class="header__mobile-menu-button">
               <img
                 src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png"
                 alt="Open menu"
@@ -75,15 +75,15 @@
         <!-- headline  -->
 
         <div class="headline">
-          <div class="headline-content">
-            <h1 class="headline-content__title">
+          <div class="headline__content">
+            <h1 class="headline__title">
               Build stunning websites & apps.
             </h1>
-            <p class="headline-content__description">
+            <p class="headline__description">
               Create live segments and target the right people for messages
               based on their behaviors.
             </p>
-            <div class="headline-content__buttons">
+            <div class="headline__buttons">
               <button class="action-button">Get Started</button>
               <button class="learn-more-button">Learn More</button>
             </div>
@@ -106,7 +106,9 @@
             science anymore.
           </p>
         </div>
-        <div class="service-description__article">
+        <div
+          class="service-description__article service-description__article_forwhom"
+        >
           <h5 class="service-description__title">Who is it for?</h5>
           <p class="service-description__paragraph">
             Startups, small companies and teams, entrepreneurs and web
@@ -169,64 +171,64 @@
       <!-- product advantages mobile  -->
 
       <section class="advantages-mob">
-        <div class="advantages-mob-item">
-          <h6 class="advantages-mob-item__small-title">Acquire Customers</h6>
-          <h1 class="advantages-mob-item__big-title">
-            Easily find leads and customers
-          </h1>
-          <p class="advantages-mob-item__paragraph">
+        <div class="advantages-mob__item advantage">
+          <h6 class="advantage__small-title">Acquire Customers</h6>
+          <h1 class="advantage__big-title">Easily find leads and customers</h1>
+          <p class="advantage__paragraph">
             Send one-off and automated email, push, and in-app messages to
             people. Create better stories.
           </p>
-          <figure class="advantages-mob-item__graphics">
+          <figure class="advantage__graphics">
             <img
               src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/tip-asquire-customer.png"
               alt="theme picture"
-              class="advantages-mob-item__graphics-picture"
+              class="advantage__graphics-pic"
             />
-            <figcaption class="advantages-mob-item__graphics-subtitle">
+            <figcaption class="advantage__graphics-subtitle">
               A better way to acquire new users
             </figcaption>
           </figure>
         </div>
         <div class="advantages-mob__line"></div>
-        <div class="advantages-mob-item">
-          <h6 class="advantages-mob-item__small-title">Engage Users</h6>
-          <h1 class="advantages-mob-item__big-title_engage">
+        <div class="advantages-mob__item advantage">
+          <h6 class="advantage__small-title">Engage Users</h6>
+          <h1 class="advantage__big-title advantage__big-title_engage">
             Engage with your audience
           </h1>
-          <p class="advantages-mob-item__paragraph">
+          <p class="advantage__paragraph">
             Send one-off and automated email, push, and in-app messages to
             people. Create better stories.
           </p>
-          <figure class="advantages-mob-item__graphics">
+          <figure class="advantage__graphics">
             <img
               src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/tip-engage-user.png"
               alt="theme picture"
-              class="advantages-mob-item__graphics-picture"
+              class="advantage__graphics-pic"
             />
-            <figcaption class="advantages-mob-item__graphics-subtitle">
+            <figcaption class="advantage__graphics-subtitle">
               Knowledge base and smart self-service
             </figcaption>
           </figure>
         </div>
         <div class="advantages-mob__line"></div>
-        <div class="advantages-mob-item">
-          <h6 class="advantages-mob-item__small-title">Support</h6>
-          <h1 class="advantages-mob-item__big-title">
+        <div class="advantages-mob__item advantages-mob__item_bottom advantage">
+          <h6 class="advantage__small-title">Support</h6>
+          <h1
+            class="advantage__big-title advantage__big-title_customer-experience"
+          >
             The best customer experiences
           </h1>
-          <p class="advantages-mob-item__paragraph">
+          <p class="advantage__paragraph advantage__paragraph_ticket-system">
             A beautifully simple system for tracking, prioritizing, and solving
             customer support tickets.
           </p>
-          <figure class="advantages-mob-item__graphics">
+          <figure class="advantage__graphics">
             <img
               src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/tip-support.png"
               alt="theme picture"
-              class="advantages-mob-item__graphics-picture"
+              class="advantage__graphics-pic"
             />
-            <figcaption class="advantages-mob-item__graphics-subtitle">
+            <figcaption class="advantage__graphics-subtitle">
               Live chat and messaging
             </figcaption>
           </figure>
@@ -241,35 +243,41 @@
           alt="design picture"
           class="features__left-bar-picture"
         />
-        <div class="features__info info">
-          <h4 class="info__upper-title">Features</h4>
-          <h2 class="info__big-title">Easily find leads and customers</h2>
-          <p class="info__selling-text_main">
+        <div class="features__info product-info">
+          <h4 class="product-info__upper-title">Features</h4>
+          <h2 class="product-info__big-title">
+            Easily find leads and customers
+          </h2>
+          <p class="product-info__selling-text_main">
             Send one-off and automated email, push, and in-app messages to
             people. Create better stories.
           </p>
-          <div class="info__blue-title blue-title-container">
+          <div
+            class="product-info__blue-sells-point blue-sells-point-container"
+          >
             <img
               src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-compas.png"
               alt="theme picture"
-              class="blue-title-container__pic"
+              class="blue-sells-point-container__pic"
             />
-            <a class="blue-title-container__title" target="_blank"
+            <a class="blue-sells-point-container__title" target="_blank"
               >Acquire new customers</a
             >
           </div>
-          <p class="info__selling-text_second">
+          <p class="product-info__selling-text_for-blue-sells-title">
             Everything you need to start building – including open-source code,
             documentation.
           </p>
-          <div class="info__selling-point selling-point">
+          <div class="product-info__selling-point selling-point">
             <img
               src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-building.png"
               alt="theme picture"
             />
             <span class="selling-point__text">Engage users</span>
           </div>
-          <div class="info__selling-point selling-point selling-point_bottom">
+          <div
+            class="product-info__selling-point selling-point selling-point_bottom"
+          >
             <img
               src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-bucket.png"
               alt="theme picture"
@@ -287,13 +295,13 @@
       <!-- inbox feature  -->
 
       <section class="inbox-feature">
-        <figure class="inbox-feature__img-container">
+        <figure class="inbox-img">
           <img
             src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/wheel.png"
             alt="theme picture"
-            class="inbox-feature__img"
+            class="inbox-img__pic"
           />
-          <figcaption class="inbox-feature__img-subtitle">
+          <figcaption class="inbox-img__subtitle">
             Connect with customers and grow faster
           </figcaption>
         </figure>
@@ -311,17 +319,15 @@
               <b>easy to implement.</b> Definitely a huge time saver for a web
               developer!”
             </p>
-            <div class="inbox-feature__feedback-giver">
+            <div class="inbox-feature__feedback-giver feedback-giver">
               <img
                 src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-avatar.png"
                 alt="Pic of Viella Malkovich"
-                class="inbox-feature__feedback-giver-pic"
+                class="feedback-giver__pic"
               />
-              <div class="inbox-feature__feedback-giver-identity">
-                <h6 class="inbox-feature__feedback-giver-name">
-                  Viella Malkovich
-                </h6>
-                <p class="inbox-feature__feedback-giver-title">
+              <div class="feedback-giver__identity">
+                <h6 class="feedback-giver__name">Viella Malkovich</h6>
+                <p class="feedback-giver__title">
                   Creative Director at Johnson
                 </p>
               </div>
@@ -355,31 +361,31 @@
               alt="theme picture"
               class="product-versions__general-figure-pic"
             />
-            <figcaption class="product-versions__general-figure-text">
+            <figcaption class="product-versions__general-figure-subtitle">
               A better way to acquire new users
             </figcaption>
           </figure>
         </div>
         <div class="product-versions__mob-line"></div>
-        <div class="product-versions__options">
-          <p class="product-versions__options-unit">
+        <div class="product-versions__options product-options">
+          <p class="product-options__unit product-options__unit_subscription">
             <b>Subscriptions.</b> Foundation works with the tools and services
             you already use every day. <br />
-            <a href="#" class="product-versions__options-unit-link">
+            <a href="#" class="product-options__unit-link">
               <b>Learn more about subscriptions</b>
             </a>
           </p>
-          <p class="product-versions__options-unit">
+          <p class="product-options__unit product-options__unit_flex-hours">
             <b>Felxible Hours.</b> Get started with our simple snippet of
             JavaScript or easy to install SDKs for iOS and Android. <br />
-            <a href="#" class="product-versions__options-unit-link">
+            <a href="#" class="product-options__unit-link">
               <b> Get more info about hours</b></a
             >
           </p>
-          <p class="product-versions__options-unit">
+          <p class="product-options__unit product-options__unit_communication">
             <b>Fast Communication.</b> We offer measures like 2FA and SSO to
             ensure the safety of your data.
-            <a href="#" class="product-versions__options-unit-link">
+            <a href="#" class="product-options__unit-link">
               <b> Communication guidelines</b></a
             >
           </p>
@@ -403,44 +409,44 @@
             Learn More
           </button>
         </div>
-        <div class="audience__pics">
-          <figure class="audience__pics-unit">
+        <div class="audience__pics audience-pics">
+          <figure class="audience-pics__unit">
             <img
               src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-1.png"
               alt="developer's head"
               class="audience__pics-unit-img"
             />
-            <figcaption class="audience__pics-unit-subtitle">
+            <figcaption class="audience-pics__unit-subtitle">
               Developers
             </figcaption>
           </figure>
-          <figure class="audience__pics-unit">
+          <figure class="audience-pics__unit">
             <img
               src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-2.png"
               alt="entertainment symbol"
               class="audience__pics-unit-img"
             />
-            <figcaption class="audience__pics-unit-subtitle">
+            <figcaption class="audience-pics__unit-subtitle">
               Entertainment
             </figcaption>
           </figure>
-          <figure class="audience__pics-unit">
+          <figure class="audience-pics__unit">
             <img
               src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-3.png"
               alt="athlete's running"
               class="audience__pics-unit-img"
             />
-            <figcaption class="audience__pics-unit-subtitle">
+            <figcaption class="audience-pics__unit-subtitle">
               Athletes
             </figcaption>
           </figure>
-          <figure class="audience__pics-unit">
+          <figure class="audience-pics__unit audience-pics__unit_bottom">
             <img
               src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/user-4.png"
               alt="creators' symbol"
               class="audience__pics-unit-img"
             />
-            <figcaption class="audience__pics-unit-subtitle">
+            <figcaption class="audience-pics__unit-subtitle">
               Creators
             </figcaption>
           </figure>
@@ -460,19 +466,25 @@
         </p>
         <h6 class="feedback__giver-name">Viella Malkovich</h6>
         <p class="feedback__giver-title">Creative Director at Johnson</p>
-        <div class="feedback__navigation">
-          <button type="button" class="feedback__navigation-item">
-            <svg class="feedback__navigation-item-shape">
+        <div class="feedback__navigation feedback-navigation">
+          <button
+            type="button"
+            class="feedback-navigation__item feedback-navigation__item_left"
+          >
+            <svg class="feedback-navigation__item-shape">
               <circle r="50"></circle>
             </svg>
           </button>
-          <button type="button" class="feedback__navigation-item">
-            <svg class="feedback__navigation-item-shape">
+          <button type="button" class="feedback-navigation__item">
+            <svg class="feedback-navigation__item-shape">
               <circle r="50"></circle>
             </svg>
           </button>
-          <button type="button" class="feedback__navigation-item">
-            <svg class="feedback__navigation-item-shape">
+          <button
+            type="button"
+            class="feedback-navigation__item feedback-navigation__item_right"
+          >
+            <svg class="feedback-navigation__item-shape">
               <circle r="50"></circle>
             </svg>
           </button>
@@ -512,7 +524,7 @@
             <span class="vacancy__button-arrow"></span>
           </button>
         </div>
-        <div class="hiring__vacancy vacancy">
+        <div class="hiring__vacancy hiring__vacancy_developer-ny vacancy">
           <div class="vacancy__brief position">
             <h4 class="position__title">Front-End Developer</h4>
             <p class="position__location">New York / Full-Time</p>
@@ -549,7 +561,7 @@
           </form>
           <p class="order__terms">
             Free 14-day trial · Easy setup · Cancel any time. Check out
-            <a href="#" class="free-trial__terms-link">Terms of Use</a>.
+            <a href="#" class="order__terms-link">Terms of Use</a>.
           </p>
         </div>
       </section>
@@ -566,8 +578,8 @@
                 alt="logo"
               />
               <div class="footer-logo__text">
-                <div class="footer-logo__text_title">Foundation</div>
-                <div class="footer-logo__text_transperant">
+                <div class="footer-logo__text-title">Foundation</div>
+                <div class="footer-logo__text-transperant">
                   Startup landing template
                 </div>
               </div>
@@ -580,7 +592,7 @@
               <a
                 href="https://www.apple.com/app-store/"
                 target="_blank"
-                class="downloads__link"
+                class="downloads__link downloads__link_apple"
               >
                 <img
                   src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/app-store.png"
@@ -601,31 +613,29 @@
           </div>
           <div class="footer-line-mobile"></div>
           <div class="footer-nav">
-            <div class="footer-nav__product footer-nav__column">
-              <h3 class="footer-nav__title">Product</h3>
-              <ul class="footer-nav__list footer-nav__list_product">
-                <li class="footer-nav__list-item">Acquire Users</li>
-                <li class="footer-nav__list-item">Content Marketing</li>
-                <li class="footer-nav__list-item">Website Templates</li>
-                <li class="footer-nav__list-item">Customer Management</li>
-                <li class="footer-nav__list-item">Virtual Inbox</li>
+            <div class="footer-nav__column footer-nav__column_product">
+              <h3 class="footer-nav__column-title">Product</h3>
+              <ul
+                class="footer-nav__column-list footer-nav__column-list_product"
+              >
+                <li class="footer-nav__column-list-item">Acquire Users</li>
+                <li class="footer-nav__column-list-item">Content Marketing</li>
+                <li class="footer-nav__column-list-item">Website Templates</li>
+                <li class="footer-nav__column-list-item">
+                  Customer Management
+                </li>
+                <li class="footer-nav__column-list-item">Virtual Inbox</li>
               </ul>
             </div>
-            <div class="footer-nav__company footer-nav__column">
-              <h3 class="footer-nav__title">Company</h3>
-              <ul class="footer-nav__list footer-nav__list_company">
-                <li class="footer-nav__list-item footer-nav__list-item_company">
-                  About Foundation
-                </li>
-                <li class="footer-nav__list-item footer-nav__list-item_company">
-                  Brand Guidelines
-                </li>
-                <li class="footer-nav__list-item footer-nav__list-item_company">
-                  Press Kit
-                </li>
-                <li class="footer-nav__list-item footer-nav__list-item_company">
-                  Support
-                </li>
+            <div class="footer-nav__column footer-nav__column-list_company">
+              <h3 class="footer-nav__column-title">Company</h3>
+              <ul
+                class="footer-nav__column-list footer-nav__column-list_company"
+              >
+                <li class="footer-nav__column-list-item">About Foundation</li>
+                <li class="footer-nav__column-list-item">Brand Guidelines</li>
+                <li class="footer-nav__column-list-item">Press Kit</li>
+                <li class="footer-nav__column-list-item">Support</li>
               </ul>
             </div>
           </div>
@@ -662,7 +672,7 @@
             <a
               href="https://www.linkedin.com"
               target="_blank"
-              class="social-networks__item"
+              class="social-networks__item social-networks__item_linkedin"
             >
               <img
                 src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/social-linkedIn.png"

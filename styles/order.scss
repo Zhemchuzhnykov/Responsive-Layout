@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 15px;
   background-color: $grey-background;
+  padding: 50px 15px;
   @include full-version {
     flex-direction: row;
     padding: 73px 228px 72px 224px;
@@ -35,9 +35,9 @@
     }
   }
   &__text .order__paragraph {
+    font-size: 22px;
     width: 100%;
     height: 167px;
-    font-size: 22px;
     line-height: 32px;
     margin: 0px 0px 40px 0px;
     @include full-version {
@@ -53,15 +53,14 @@
       flex-direction: row;
       margin-left: 123.59px;
     }
-  }
-  &__text .order__action-buttons > .order__action-buttons_email {
-    text-align: center;
+    &_email {
+      text-align: center;
+      font-size: 18px;
     height: 48px;
     width: 100%;
-    margin-bottom: 12px;
     border: 1px solid $border;
     border-radius: 2px;
-    font-size: 18px;
+    margin-bottom: 12px;
     @include full-version {
       flex-grow: 1;
       text-align: left;
@@ -71,16 +70,17 @@
     &::placeholder {
       color: $text;
     }
-  }
-  &__text .order__action-buttons > .order__action-buttons_get-started {
-    margin-bottom: 10px;
+    }
+    &_get-started {
+      margin-bottom: 10px;
     @include full-version {
       margin: 0px 0px 0px 10px;
     }
+    }
   }
   &__text .order__terms {
-    height: 44px;
     font-size: 14px;
+    height: 44px;
     line-height: 22px;
     color: $text-transperant;
     margin: 0;
@@ -88,9 +88,6 @@
       max-width: 497px;
       margin-top: 10px;
       margin-left: 122.59px;
-    }
-    &-link {
-      color: $blue;
     }
   }
 }

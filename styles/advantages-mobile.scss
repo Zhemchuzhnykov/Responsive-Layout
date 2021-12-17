@@ -1,67 +1,62 @@
 
 .advantages-mob {
   padding: 48px 0px 50px 0px;
-  &-item {
+  &__item {
     padding: 0px 15px 40px 15px;
-    &:last-child {
+    &_bottom {
       padding-bottom: 0;
     }
-    &__small-title {
-      margin: 0;
-      padding: 0;
+    & > .advantage__small-title {
       font-weight: 700;
       font-size: 22px;
       line-height: 34px;
       color: $green;
+      margin: 0;
+      padding: 0;
     }
-    &__big-title {
-      margin: 17px 0px 15px 0px;
-      height: 124px;
+    & > .advantage__big-title {
       font-weight: 700;
       font-size: 40px;
+      height: 124px;
       line-height: 40px;
+      margin: 17px 0px 15px 0px;
       letter-spacing: -0.36px;
     }
-    &__big-title_engage {
-      margin: 17px 0px 18px 0px;
+    & > .advantage__big-title_engage {
       height: 87px;
+      margin: 17px 0px 18px 0px;
     }
-    &:last-child > .advantages-mob-item__big-title {
-      margin-bottom: 13px;
+    & > .advantage__big-title_customer-experience {
       height: 126px;
+      margin-bottom: 13px;
     }
-    &__paragraph {
-      height: 168px;
+    & > .advantage__paragraph {
       font-size: 24px;
+      height: 168px;
       line-height: 34px;
       margin: 0;
       margin-bottom: 30px;
     }
-    &:last-child > .advantages-mob-item__paragraph {
+    & > .advantage__paragraph_ticket-system {
       height: 169px;
       margin-bottom: 29px;
     }
-    &__graphics {
+    & .advantage__graphics {
       display: flex;
       flex-direction: column;
       margin: 0;
-      &-picture {
+      &-pic {
         margin: auto;
         max-width: 100%;
       }
       &-subtitle {
         text-align: center;
+        font-size: 14px;
+        height: 22px;
+        line-height: 22px;
         color: $text-transperant;
         margin-top: 20px;
-        height: 22px;
-        font-size: 14px;
-        line-height: 22px;
       }
-    }
-    &:first-child
-      .advantages-mob-item__graphics
-      > .advantages-mob-item__graphics-subtitle {
-      margin-top: 19px;
     }
   }
   &__line {

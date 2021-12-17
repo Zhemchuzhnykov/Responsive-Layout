@@ -6,30 +6,30 @@
     width: 1140px;
     margin: 76px auto 126px auto;
   }
-  &-content {
+  &__content {
     padding: 0px 15px 33px 15px;
     @include full-version {
       z-index: 1;
       padding: 0;
     }
-    &__title {
-      min-height: 205px;
-      line-height: 50px;
+    & .headline__title {
       font-weight: 700;
       font-size: 50px;
+      min-height: 205px;
+      line-height: 50px;
       letter-spacing: -0.3125px;
       margin: 0;
       margin-bottom: 19px;
       @include full-version {
-        max-width: 754px;
-        min-height: 165px;
         line-height: 78px;
         font-size: 80px;
+        max-width: 754px;
+        min-height: 165px;
         margin: 0px 0px 34px 0px;
         letter-spacing: -0.5px;
       }
     }
-    &__description {
+    & .headline__description {
       font-size: 24px;
       line-height: 34px;
       min-height: 172px;
@@ -40,7 +40,7 @@
         margin-bottom: 58px;
       }
     }
-    &__buttons {
+    & .headline__buttons {
       display: flex;
       flex-direction: column;
       @include full-version {
@@ -49,8 +49,8 @@
     }
   }
   &__banner {
-    margin-bottom: 36px;
     width: 100%;
+    margin-bottom: 36px;
     @include full-version {
       position: absolute;
       right: 25px;

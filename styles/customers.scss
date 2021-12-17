@@ -23,18 +23,18 @@
       @include full-version {
         border: none;
       }
-      &:nth-child(3),
-      .customers-row__item:last-child {
+      &_apple {
         border-right: none;
+      }
+      &_google {
+        border-right: none;
+        @include full-version {
+          margin-right: 130px;
+        }
       }
       &_new-york-times {
         @include full-version {
           margin-left: 130px;
-        }
-      }
-      &_google {
-        @include full-version {
-          margin-right: 130px;
         }
       }
       &_apple {

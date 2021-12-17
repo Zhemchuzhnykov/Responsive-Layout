@@ -16,12 +16,12 @@
   @include full-version {
     min-height: 62px;
     width: 1140px;
-    margin: 0 auto;
     background-color: $pink-background;
+    margin: 0 auto;
   }
-  &-logo {
+  & .logo {
     display: flex;
-    & .logo__image {
+    &__image {
       display: none;
       @include full-version {
         display: inline;
@@ -29,16 +29,16 @@
         min-height: 60px;
         margin: 2px 15px 0px 0px;
       }
-      }
-    & .logo__image_mobile {
-      max-width: 48px;
+      &_mobile {
+        max-width: 48px;
       min-height: 48px;
       margin: 8px 13px 8px 15px;
       @include full-version {
         display: none;
       }
-    }
-    & .logo__text {
+      }
+      }
+    &__text {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -46,10 +46,10 @@
         max-width: 222px;
       }
       &_title {
-        max-width: 111px;
-        line-height: 25px;
         font-size: 20px;
         font-weight: 700;
+        max-width: 111px;
+        line-height: 25px;
       }
       &_description {
         display: none;
@@ -63,7 +63,7 @@
       }
     }
   }
-  &-nav {
+  &__nav {
     display: none;
     @include full-version {
       display: flex;
@@ -73,27 +73,27 @@
       margin-left: auto;
       margin-right: 56px;
     }
-      &__item {
+      &-item {
+        font-size: 18px;
         color: $text;
         text-decoration: none;
         line-height: 25px;
-        font-size: 18px;
-        &:nth-last-child(1) {
+        &_library {
           padding-right: 0;
+          & .header__nav-arrow  {
+            display: inline-block;
+            vertical-align: middle;
+            height: 5px;
+            width: 8px;
+            margin-left: 11px;
+          }
         }
         &_selected {
           font-weight: 700;
         }
-        &:last-child .nav-arrow  {
-          display: inline-block;
-          vertical-align: middle;
-          height: 5px;
-          width: 8px;
-          margin-left: 11px;
-        }
       }
     }
-    &-button {
+    &__button {
       display: none;
       @include full-version {
         display: block;
@@ -116,7 +116,7 @@
       @include full-version {
         display: none;
       }
-      &_button {
+      &-button {
         margin: auto;
         background-color: transparent;
         border: none;

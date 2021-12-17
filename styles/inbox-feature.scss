@@ -6,11 +6,9 @@
     padding: 115px 99px 101px 193px;
   }
   & .inbox-img {
-    margin: 0;
-    margin-bottom: 32px;
+    margin: 0px 0px 32px 0px;
     @include full-version {
-      margin: 0;
-      margin-top: 27px;
+      margin: 27px 0px 0px 0px;
     }
     &__pic {
       max-width: 100%;
@@ -33,25 +31,21 @@
   }
   &__text {
     &-small-title {
-      font-weight: 700;
       font-size: 22px;
+      font-weight: 700;
       color: $orange-text;
-      height: 34px;
       line-height: 34px;
-      margin: 0;
-      margin-bottom: 17px;
+      margin: 0px 0px 17px 0px;
       @include full-version {
-        margin-left: 192px;
-        margin-bottom: 24px;
+        margin: 0px 0px 24px 192px;
       }
     }
     &-big-title {
-      font-size: 700px;
       font-size: 40px;
+      font-weight: 700px;
       min-height: 80px;
       line-height: 40px;
-      margin: 0px;
-      margin-bottom: 18px;
+      margin: 0px 0px 18px 0px;
       letter-spacing: 
       -0.357143px;
       @include full-version {
@@ -59,30 +53,26 @@
         height: 112px;
         line-height: 56px;
         font-size: 56px;
-        margin-left: 190px;
-        margin-bottom: 30px;
+        margin: 0px 0px 30px 190px;
       }
     }
     &-paragraph {
       font-size: 24px;
       min-height: 205px;
       line-height: 34px;
-      margin: 0px;
-      margin-bottom: 30px;
+      margin: 0px 0px 30px 0px;
       @include full-version {
         max-width: 461px;
         min-height: 102px;
-        margin-left: 192px;
-        margin-bottom: 44px;
+        margin: 0px 0px 44px 192px;
       }
     }
     & .inbox-feature__feedback {
       min-height: 323px;
-      background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-05) 100%), #FFFFFF;
-      background-blend-mode: overlay, normal;
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+      background: $white;
       border-bottom: 4px solid $blue-line;
       padding: 30px 20px 28px 20px;
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
       @include full-version {
         max-width: 519px;
         min-height: 213px;
@@ -93,8 +83,7 @@
         font-size: 20px;
         min-height: 169px;
         line-height: 28px;
-        margin: 0px;
-        margin-bottom: 26px;
+        margin: 0px 0px 26px 0px;
         @include full-version {
           max-width: 459px;
           min-height: 85px;

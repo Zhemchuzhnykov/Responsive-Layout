@@ -11,8 +11,7 @@
     margin-bottom: 30px;
     @include full-version {
     flex-direction: row;
-    padding-left: 130px;
-    padding-bottom: 47px;
+    padding: 0px 0px 47px 130px;
   }
   & .about-company {
     display: flex;
@@ -41,8 +40,7 @@
         align-items: center;
         justify-content: center;
         height: 51px;
-        margin-top: 20px;
-        margin-bottom: 31px;
+        margin: 20px 0px 31px 0px;
         @include full-version {
           align-items: baseline;
           margin: 0;
@@ -68,8 +66,7 @@
         max-width: 360px;
         height: 85px;
         line-height: 26px;
-        margin-top: 26px;
-        margin-bottom: 25px;
+        margin: 26px 0px 25px 0px;
       }
     }
     & .downloads {
@@ -96,8 +93,7 @@
     @include full-version {
       display: flex;
       flex-direction: row;
-      margin-top: 17px;
-      margin-left: 126px;
+      margin: 17px 0px 0px 126px;
       padding: 0;
     }
     &__column_product {
@@ -139,9 +135,8 @@
         color: $text-transperant;
         margin-bottom: 7px;
         @include full-version {
-          margin-bottom: 6px;
-          line-height: 30px;
           vertical-align: text-top;
+          margin-bottom: 6px;
         }
       }
     }

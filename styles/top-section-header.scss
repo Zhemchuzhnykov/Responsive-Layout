@@ -31,13 +31,13 @@
       }
       &_mobile {
         max-width: 48px;
-      min-height: 48px;
-      margin: 8px 13px 8px 15px;
-      @include full-version {
-        display: none;
+        min-height: 48px;
+        margin: 8px 13px 8px 15px;
+        @include full-version {
+           display: none;
+        }
       }
-      }
-      }
+    }
     &__text {
       display: flex;
       flex-direction: column;
@@ -70,8 +70,7 @@
       justify-content: space-between;
       align-items: center;
       width: 292px;
-      margin-left: auto;
-      margin-right: 56px;
+      margin: 0px 56px 0px auto;
     }
       &-item {
         font-size: 18px;

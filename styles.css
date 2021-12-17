@@ -132,8 +132,7 @@ body .webpage {
   .customers {
     flex-direction: row;
     align-items: center;
-    padding-top: 30px;
-    padding-bottom: 106px;
+    padding: 30px 0px 106px 0px;
   }
 }
 .customers .customers-row {
@@ -217,7 +216,6 @@ body .webpage {
 .features .product-info__upper-title {
   font-weight: 700;
   font-size: 22px;
-  min-height: 34px;
   line-height: 34px;
   color: #009b4d;
   margin: 0;
@@ -238,8 +236,7 @@ body .webpage {
   min-height: 132px;
   max-width: 461px;
   margin: 0;
-  padding-left: 2px;
-  padding-top: 30px;
+  padding: 30px 0px 0px 2px;
 }
 .features .product-info .blue-sells-point-container {
   display: flex;
@@ -278,12 +275,10 @@ body .webpage {
   font-weight: 700;
   font-size: 22px;
   line-height: 26px;
-  padding-left: 15px;
-  padding-top: 3px;
+  padding: 3px 0px 0px 15px;
 }
 .features .product-info .selling-point_bottom {
-  padding-top: 21px;
-  padding-bottom: 24px;
+  padding: 21px 0px 24px 0px;
 }
 .features__banner {
   margin-left: auto;
@@ -326,8 +321,8 @@ body .webpage {
   }
 }
 .service-description__article .service-description__title {
-  font-weight: 700;
   font-size: 22px;
+  font-weight: 700;
   line-height: 32px;
   margin: 0px;
 }
@@ -430,8 +425,7 @@ body .webpage {
     justify-content: space-between;
     align-items: center;
     width: 292px;
-    margin-left: auto;
-    margin-right: 56px;
+    margin: 0px 56px 0px auto;
   }
 }
 .header__nav-item {
@@ -508,13 +502,12 @@ body .webpage {
   }
 }
 .headline__content .headline__title {
-  font-weight: 700;
   font-size: 50px;
+  font-weight: 700;
   min-height: 205px;
   line-height: 50px;
+  margin: 0px 0px 19px 0px;
   letter-spacing: -0.3125px;
-  margin: 0;
-  margin-bottom: 19px;
 }
 @media screen and (min-width: 1400px) {
   .headline__content .headline__title {
@@ -557,8 +550,7 @@ body .webpage {
     position: absolute;
     right: 25px;
     max-width: 796px;
-    margin-bottom: 0;
-    margin-top: 8px;
+    margin-bottom: 8px 0px 0px 0px;
   }
 }
 
@@ -589,10 +581,10 @@ body .webpage {
 }
 .order__text .order__title {
   text-align: center;
+  font-size: 40px;
+  font-weight: 700;
   max-width: 100%;
   height: 80px;
-  font-weight: 700;
-  font-size: 40px;
   line-height: 40px;
   margin: 40px 0px 18px 0px;
   letter-spacing: -0.25px;
@@ -683,13 +675,11 @@ body .webpage {
   }
 }
 .inbox-feature .inbox-img {
-  margin: 0;
-  margin-bottom: 32px;
+  margin: 0px 0px 32px 0px;
 }
 @media screen and (min-width: 1400px) {
   .inbox-feature .inbox-img {
-    margin: 0;
-    margin-top: 27px;
+    margin: 27px 0px 0px 0px;
   }
 }
 .inbox-feature .inbox-img__pic {
@@ -715,27 +705,23 @@ body .webpage {
   }
 }
 .inbox-feature__text-small-title {
-  font-weight: 700;
   font-size: 22px;
+  font-weight: 700;
   color: #f1592b;
-  height: 34px;
   line-height: 34px;
-  margin: 0;
-  margin-bottom: 17px;
+  margin: 0px 0px 17px 0px;
 }
 @media screen and (min-width: 1400px) {
   .inbox-feature__text-small-title {
-    margin-left: 192px;
-    margin-bottom: 24px;
+    margin: 0px 0px 24px 192px;
   }
 }
 .inbox-feature__text-big-title {
-  font-size: 700px;
   font-size: 40px;
+  font-weight: 700px;
   min-height: 80px;
   line-height: 40px;
-  margin: 0px;
-  margin-bottom: 18px;
+  margin: 0px 0px 18px 0px;
   letter-spacing: -0.357143px;
 }
 @media screen and (min-width: 1400px) {
@@ -744,32 +730,28 @@ body .webpage {
     height: 112px;
     line-height: 56px;
     font-size: 56px;
-    margin-left: 190px;
-    margin-bottom: 30px;
+    margin: 0px 0px 30px 190px;
   }
 }
 .inbox-feature__text-paragraph {
   font-size: 24px;
   min-height: 205px;
   line-height: 34px;
-  margin: 0px;
-  margin-bottom: 30px;
+  margin: 0px 0px 30px 0px;
 }
 @media screen and (min-width: 1400px) {
   .inbox-feature__text-paragraph {
     max-width: 461px;
     min-height: 102px;
-    margin-left: 192px;
-    margin-bottom: 44px;
+    margin: 0px 0px 44px 192px;
   }
 }
 .inbox-feature__text .inbox-feature__feedback {
   min-height: 323px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.00001) 100%), #FFFFFF;
-  background-blend-mode: overlay, normal;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  background: white;
   border-bottom: 4px solid #0185d0;
   padding: 30px 20px 28px 20px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
 }
 @media screen and (min-width: 1400px) {
   .inbox-feature__text .inbox-feature__feedback {
@@ -783,8 +765,7 @@ body .webpage {
   font-size: 20px;
   min-height: 169px;
   line-height: 28px;
-  margin: 0px;
-  margin-bottom: 26px;
+  margin: 0px 0px 26px 0px;
 }
 @media screen and (min-width: 1400px) {
   .inbox-feature__text .inbox-feature__feedback-text {
@@ -848,13 +829,11 @@ body .webpage {
   }
 }
 .product-versions__general-text-title_blue {
-  height: 34px;
   line-height: 34px;
   font-size: 22px;
   font-weight: 700;
   color: #0189d1;
-  margin: 0;
-  margin-bottom: 17px;
+  margin: 0px 0px 17px 0px;
 }
 @media screen and (min-width: 1400px) {
   .product-versions__general-text-title_blue {
@@ -862,12 +841,11 @@ body .webpage {
   }
 }
 .product-versions__general-text-title_big {
-  font-weight: 700;
   font-size: 40px;
+  font-weight: 700;
   min-height: 80px;
   line-height: 40px;
-  margin: 0;
-  margin-bottom: 18px;
+  margin: 0px 0px 18px 0px;
   letter-spacing: -0.357143px;
 }
 @media screen and (min-width: 1400px) {
@@ -884,8 +862,7 @@ body .webpage {
   font-size: 24px;
   min-height: 167px;
   line-height: 34px;
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0px 0px 30px 0px;
 }
 @media screen and (min-width: 1400px) {
   .product-versions__general-text-paragraph {
@@ -919,7 +896,6 @@ body .webpage {
 .product-versions__general-figure-subtitle {
   text-align: center;
   font-size: 14px;
-  min-height: 22px;
   line-height: 22px;
   color: rgba(43, 41, 45, 0.6);
 }
@@ -998,8 +974,7 @@ body .webpage {
   font-weight: 700;
   min-height: 34px;
   line-height: 34px;
-  margin: 0;
-  margin-bottom: 17px;
+  margin: 0px 0px 17px 0px;
 }
 @media screen and (min-width: 1400px) {
   .audience__small-title {
@@ -1013,9 +988,8 @@ body .webpage {
   font-weight: 700;
   min-height: 80px;
   line-height: 40px;
-  margin: 0;
-  margin-bottom: 18px;
-  letter-spacing: -0.357143px;
+  margin: 0px 0px 18px 0px;
+  letter-spacing: -0.35px;
 }
 @media screen and (min-width: 1400px) {
   .audience__big-title {
@@ -1032,8 +1006,7 @@ body .webpage {
   min-height: 136px;
   line-height: 34px;
   font-size: 24px;
-  margin: 0;
-  margin-bottom: 30px;
+  margin: 0px 0px 30px 0px;
 }
 @media screen and (min-width: 1400px) {
   .audience__description {
@@ -1086,8 +1059,7 @@ body .webpage {
   min-height: 300px;
   background-color: white;
   border-radius: 8px;
-  margin: 0;
-  margin-bottom: 15px;
+  margin: 0px 0px 15px 0px;
   padding: 22px 0px 33px 0px;
 }
 @media screen and (min-width: 1400px) {
@@ -1098,10 +1070,10 @@ body .webpage {
 }
 .audience__pics > .audience-pics__unit > .audience-pics__unit-subtitle {
   text-align: center;
-  height: 28px;
-  line-height: 28px;
   font-size: 22px;
   font-weight: 700;
+  height: 28px;
+  line-height: 28px;
   margin-top: 22px;
 }
 .audience__pics > .audience-pics__unit:hover {
@@ -1134,8 +1106,7 @@ body .webpage {
   color: #3040c4;
   min-height: 120px;
   line-height: 30px;
-  margin: 0;
-  margin-bottom: 29px;
+  margin: 20px 0px 29px 0px;
 }
 @media screen and (min-width: 1400px) {
   .feedback__title {
@@ -1148,8 +1119,7 @@ body .webpage {
   font-size: 24px;
   min-height: 307px;
   line-height: 34px;
-  margin: 0;
-  margin-bottom: 32px;
+  margin: 0px 0px 32px 0px;
 }
 @media screen and (min-width: 1400px) {
   .feedback__text {
@@ -1169,8 +1139,7 @@ body .webpage {
   line-height: 24px;
   font-size: 16px;
   color: rgba(43, 41, 45, 0.6);
-  margin: 0;
-  margin-bottom: 40px;
+  margin: 0px 0px 40px 0px;
 }
 @media screen and (min-width: 1400px) {
   .feedback__giver-title {
@@ -1241,12 +1210,11 @@ body .webpage {
 }
 .hiring__title {
   text-align: center;
-  font-weight: 700;
   font-size: 40px;
+  font-weight: 700;
   min-height: 45px;
   line-height: 40px;
-  margin: 0px;
-  margin-bottom: 18px;
+  margin: 0px 0px 18px 0px;
   letter-spacing: -0.357143px;
 }
 @media screen and (min-width: 1400px) {
@@ -1264,8 +1232,7 @@ body .webpage {
   font-size: 24px;
   min-height: 136px;
   line-height: 34px;
-  margin: 0px;
-  margin-bottom: 30px;
+  margin: 0px 0px 30px 0px;
 }
 @media screen and (min-width: 1400px) {
   .hiring__description {
@@ -1409,8 +1376,7 @@ body .webpage {
 @media screen and (min-width: 1400px) {
   .footer-main {
     flex-direction: row;
-    padding-left: 130px;
-    padding-bottom: 47px;
+    padding: 0px 0px 47px 130px;
   }
 }
 .footer-main .about-company {
@@ -1446,8 +1412,7 @@ body .webpage {
   align-items: center;
   justify-content: center;
   height: 51px;
-  margin-top: 20px;
-  margin-bottom: 31px;
+  margin: 20px 0px 31px 0px;
 }
 @media screen and (min-width: 1400px) {
   .footer-main .about-company .footer-logo__text {
@@ -1476,8 +1441,7 @@ body .webpage {
     max-width: 360px;
     height: 85px;
     line-height: 26px;
-    margin-top: 26px;
-    margin-bottom: 25px;
+    margin: 26px 0px 25px 0px;
   }
 }
 .footer-main .about-company .downloads {
@@ -1507,8 +1471,7 @@ body .webpage {
   .footer-main .footer-nav {
     display: flex;
     flex-direction: row;
-    margin-top: 17px;
-    margin-left: 126px;
+    margin: 17px 0px 0px 126px;
     padding: 0;
   }
 }
@@ -1558,9 +1521,8 @@ body .webpage {
 }
 @media screen and (min-width: 1400px) {
   .footer-main .footer-nav__column-list-item {
-    margin-bottom: 6px;
-    line-height: 30px;
     vertical-align: text-top;
+    margin-bottom: 6px;
   }
 }
 .footer-line-desktop {
@@ -1603,7 +1565,6 @@ body .webpage {
   font-size: 14px;
   color: rgba(43, 41, 45, 0.6);
   line-height: 22px;
-  height: 22px;
   text-decoration: none;
 }
 .footer-bottom .social-networks {
@@ -1621,7 +1582,7 @@ body .webpage {
 }
 @media screen and (min-width: 1400px) {
   .footer-bottom .social-networks__item_linkedin {
-    padding-right: 132px;
+    margin-right: 132px;
   }
 }
 

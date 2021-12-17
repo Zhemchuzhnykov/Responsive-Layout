@@ -22,7 +22,6 @@
         font-size: 14px;
         color: $text-transperant;
         line-height: 22px;
-        height: 22px;
         text-decoration: none;
       }
     }
@@ -37,7 +36,7 @@
         padding-right: 20px;
         &_linkedin {
           @include full-version {
-            padding-right: 132px
+            margin-right: 132px
         }
       }
     }

@@ -15,13 +15,12 @@
       color: $green;
     }
     &__big-title {
-      margin: 0;
+      margin: 17px 0px 15px 0px;
       height: 124px;
       font-weight: 700;
       font-size: 40px;
       line-height: 40px;
       letter-spacing: -0.36px;
-      margin: 17px 0px 15px 0px;
     }
     &__big-title_engage {
       margin: 17px 0px 18px 0px;
@@ -43,20 +42,20 @@
       margin-bottom: 29px;
     }
     &__graphics {
-      margin: 0;
       display: flex;
       flex-direction: column;
+      margin: 0;
       &-picture {
-        max-width: 100%;
         margin: auto;
+        max-width: 100%;
       }
       &-subtitle {
+        text-align: center;
+        color: $text-transperant;
         margin-top: 20px;
         height: 22px;
         font-size: 14px;
         line-height: 22px;
-        color: $text-transperant;
-        text-align: center;
       }
     }
     &:first-child

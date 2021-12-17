@@ -7,29 +7,30 @@
     display: flex;
   }
   &__left-bar-picture {
-    height: 166px;
     position: absolute;
+    height: 166px;
     top: 258px;
+    
   }
   & .info {
     padding-left: 126px;
     &__upper-title {
       font-weight: 700;
       font-size: 22px;
+      min-height: 34px;
       line-height: 34px;
       color: $green;
       margin: 0;
       padding-left: 2px;
-      min-height: 34px;
     }
     &__big-title {
       font-weight: 700;
       font-size: 56px;
+      max-width: 462px;
       line-height: 56px;
       letter-spacing: -0.5px;
       margin: 0;
       padding-top: 24px;
-      max-width: 462px;
     }
     &__selling-text_main {
       font-size: 24px;
@@ -42,18 +43,18 @@
       min-height: 132px;
     }
     & .blue-title-container {
-      padding-top: 42px;
       display: flex;
+      align-items: flex-start;
+      padding-top: 42px;
       padding-left: 3px;
       min-height: 70px;
-      align-items: flex-start;
       &__title {
-        margin: 0;
-        padding-left: 15px;
+        color: $blue;
         font-weight: 700;
         font-size: 22px;
+        margin: 0;
+        padding-left: 15px;
         line-height: 26px;
-        color: $blue;
         &:hover {
         cursor: pointer;
       }
@@ -61,21 +62,17 @@
     }
     &__selling-text_second {
       font-size: 18px;
+      min-height: 81px;
       line-height: 26px;
       max-width: 459px;
+      padding: 8px 0px 18px 3px;
       margin: 0;
-      padding-top: 8px;
-      padding-bottom: 18px;
       border-bottom: 3px solid $blue;
-      padding-left: 3px;
-      min-height: 81px;
     }
     & .selling-point {
-      border-bottom: 1px solid $grey-line;
-      padding-top: 20px;
-      padding-bottom: 22px;
       display: flex;
-      padding-left: 4px;
+      border-bottom: 1px solid $grey-line;
+      padding: 20px 0px 22px 4px;
       min-height: 71px;
       &__text {
         font-weight: 700;

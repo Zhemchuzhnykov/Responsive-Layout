@@ -7,8 +7,8 @@ body {
   & .webpage {
     width: 100%;
     @include full-version {
-      margin: auto;
       max-width: 1400px;
+      margin: auto;
     }
   }
 }

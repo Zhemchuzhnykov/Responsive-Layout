@@ -3,8 +3,8 @@
   flex-direction: column;
   margin-top: 35px;
   @include full-version {
-    margin: 76px auto 126px auto;
     width: 1140px;
+    margin: 76px auto 126px auto;
   }
   &-content {
     padding: 0px 15px 33px 15px;
@@ -13,13 +13,13 @@
       padding: 0;
     }
     &__title {
-      margin: 0;
-      margin-bottom: 19px;
-      font-weight: 700;
+      min-height: 205px;
       line-height: 50px;
+      font-weight: 700;
       font-size: 50px;
       letter-spacing: -0.3125px;
-      min-height: 205px;
+      margin: 0;
+      margin-bottom: 19px;
       @include full-version {
         max-width: 754px;
         min-height: 165px;
@@ -30,10 +30,10 @@
       }
     }
     &__description {
-      margin: 0px 0px 30px 0px;
       font-size: 24px;
       line-height: 34px;
       min-height: 172px;
+      margin: 0px 0px 30px 0px;
       @include full-version {
         max-width: 456px;
         min-height: 102px;
@@ -52,11 +52,11 @@
     margin-bottom: 36px;
     width: 100%;
     @include full-version {
-      margin-bottom: 0;
-      margin-top: 8px;
       position: absolute;
       right: 25px;
       max-width: 796px;
+      margin-bottom: 0;
+      margin-top: 8px;
     }
   }
 }

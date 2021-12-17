@@ -15,44 +15,44 @@
         margin: 13px 193px 0px 0px;
       }
       &-title_blue {
-        margin: 0;
-        margin-bottom: 17px;
         height: 34px;
         line-height: 34px;
         font-size: 22px;
         font-weight: 700;
         color: $light-blue;
+        margin: 0;
+        margin-bottom: 17px;
         @include full-version {
           margin: 0px 0px 24px 2px;
         }
       }
       &-title_big {
-        margin: 0;
-        margin-bottom: 18px;
         min-height: 80px;
         line-height: 40px;
         font-weight: 700;
         font-size: 40px;
+        margin: 0;
+        margin-bottom: 18px;
         letter-spacing: -0.357143px;
         @include full-version {
-          margin-bottom: 30px;
           max-width: 462px;
           min-height: 112px;
           line-height: 56px;
           font-size: 56px;
+          margin-bottom: 30px;
           letter-spacing: -0.5px;
         }
       }
       &-paragraph {
-        margin: 0;
-        margin-bottom: 30px;
         min-height: 167px;
         line-height: 34px;
         font-size: 24px;
+        margin: 0;
+        margin-bottom: 30px;
         @include full-version {
-          margin: 0px 0px 39px 2px;
           min-height: 102px;
           max-width: 461px;
+          margin: 0px 0px 39px 2px;
         }
       }
       &-button {
@@ -66,18 +66,18 @@
     &-figure {
       margin: 0;
       &-pic {
-        margin-bottom: 17px;
         max-width: 100%;
+        margin-bottom: 17px;
         @include full-version {
-          margin-bottom: 15px;
           width: 425px;
+          margin-bottom: 15px;
         }
       }
       &-text {
+        text-align: center;
         min-height: 22px;
         line-height: 22px;
         font-size: 14px;
-        text-align: center;
         color: $text-transperant;
       }
     }
@@ -93,19 +93,19 @@
       margin: 41px 0px 0px 4px;
     }
     &-unit {
-      margin: 0;
       min-height: 138px;
       line-height: 26px;
       font-size: 18px;
+      margin: 0;
       position: relative;
       @include full-version {
         max-width: 360px;
         min-height: 115px;
       }
       &-link {
-        color: $blue;
         position: absolute;
         bottom: 6px;
+        color: $blue;
       }
       &:first-child {
         margin-bottom: 33px;

@@ -1,55 +1,55 @@
 .hiring {
   padding: 50px 15px;
   @include full-version {
-    padding: 106px 325px 110px 325px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 106px 325px 110px 325px;
   }
   &__title {
-    margin: 0px;
-    margin-bottom: 18px;
+    text-align: center;
     min-height: 45px;
     font-weight: 700;
     font-size: 40px;
+    margin: 0px;
+    margin-bottom: 18px;
     line-height: 40px;
-    text-align: center;
     letter-spacing: -0.357143px;
     @include full-version {
-      margin-bottom: 20px;
       max-width: 555px;
       min-height: 62px;
       font-size: 56px;
       line-height: 56px;
+      margin-bottom: 20px;
       letter-spacing: -0.5px;
     }
   }
   &__description {
-    margin: 0px;
-    margin-bottom: 30px;
+    text-align: center;
     min-height: 136px;
     font-size: 24px;
     line-height: 34px;
-    text-align: center;
+    margin: 0px;
+    margin-bottom: 30px;
     @include full-version {
-      margin-bottom: 28px;
       max-width: 555px;
       min-height: 72px;
+      margin-bottom: 28px;
     }
   }
   &__button {
     margin-bottom: 39px;
     @include full-version {
-      margin-bottom: 110px;
       max-width: 247px;
+      margin-bottom: 110px;
     }
   }
   &__vacancy {
+    max-width: 100%;
     min-height: 140px;
     margin-bottom: 15px;
     border: 1px solid $border;
     border-radius: 8px;
-    max-width: 100%;
     @include full-version {
       width: 750px;
       min-height: 81px;
@@ -91,52 +91,52 @@
       }
     }
     &__button {
+      display: flex;
       flex: 1;
       border:none;
       background-color: $dark-grey-background;
-      display: flex;
       @include full-version {
         background-color: transparent;
       }
       &-arrow {
         display: block;
+        margin: auto;
         width: 7px;
         height: 12px;
-        margin: auto;
         background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png");
       }
     }
     & .position {
-      padding: 19px 20px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      padding: 19px 20px;
       @include full-version {
         flex-direction: row;
         justify-content: flex-start;
         padding: 26px 0px 26px 25px;
       }
       &__title {
-        margin: 0;
         font-weight: 700;
         font-size: 22px;
         line-height: 28px;
+        margin: 0;
         @include full-version {
-          min-height: 29px;
           flex: 2;
+          min-height: 29px;
         }
       }
       &__location {
-        margin: 0;
         font-size: 16px;
         line-height: 22px;
         color: $text-transperant;
         min-height: 26px;
+        margin: 0;
         @include full-version {
           flex: 1;
-          margin-top: 2px;
           font-size: 18px;
           line-height: 24px;
+          margin-top: 2px;
         }
       }
     }

@@ -9,6 +9,7 @@
     min-height: 983px;
     padding: 108px 131px 110px 130px;
   }
+
   &__small-title {
     text-align: center;
     font-size: 22px;
@@ -21,6 +22,7 @@
       margin-bottom: 24px;
     }
   }
+
   &__big-title {
     text-align: center;
     font-size: 40px;
@@ -38,6 +40,7 @@
       letter-spacing: -0.5px;
     }
   }
+
   &__description {
     text-align: center;
     min-height: 136px;
@@ -52,6 +55,7 @@
       margin: 0;
     }
   }
+
   &__buttons {
     margin-bottom: 40px;
     @include full-version {
@@ -60,12 +64,14 @@
       top: 414px;
       left: 536px;
     }
+
     &_action-call {
       margin-bottom: 12px;
       @include full-version {
         flex-shrink: 0;
       }
     }
+
     &_learn-more {
       color: $text;
       @include full-version {
@@ -73,6 +79,7 @@
       }
     }
   }
+
   &__pics {
     @include full-version {
       display: flex;
@@ -80,6 +87,7 @@
       justify-content: space-between;
       width: 100%;
     }
+
     & > .audience-pics__unit {
       display: flex;
       flex-direction: column;
@@ -93,6 +101,7 @@
         width: 262px;
         margin-bottom: 0px;
       }
+
       & > .audience-pics__unit-subtitle {
         text-align: center;
         font-size: 22px;
@@ -101,13 +110,16 @@
         line-height: 28px;
         margin-top: 22px;
       }
+
       &:hover {
           cursor: pointer;
           background-color: $blue;
+
         & > .audience-pics__unit-subtitle {
           color: $white;
         }
       }
+      
       &_bottom {
         margin-bottom: 0;
       }

@@ -1,11 +1,14 @@
 
 .advantages-mob {
   padding: 48px 0px 50px 0px;
+
   &__item {
     padding: 0px 15px 40px 15px;
+
     &_bottom {
       padding-bottom: 0;
     }
+
     & > .advantage__small-title {
       font-weight: 700;
       font-size: 22px;
@@ -14,6 +17,7 @@
       margin: 0;
       padding: 0;
     }
+
     & > .advantage__big-title {
       font-weight: 700;
       font-size: 40px;
@@ -22,14 +26,17 @@
       margin: 17px 0px 15px 0px;
       letter-spacing: -0.36px;
     }
+
     & > .advantage__big-title_engage {
       height: 87px;
       margin: 17px 0px 18px 0px;
     }
+
     & > .advantage__big-title_customer-experience {
       height: 126px;
       margin-bottom: 13px;
     }
+
     & > .advantage__paragraph {
       font-size: 24px;
       height: 168px;
@@ -37,18 +44,22 @@
       margin: 0;
       margin-bottom: 30px;
     }
+
     & > .advantage__paragraph_ticket-system {
       height: 169px;
       margin-bottom: 29px;
     }
+
     & .advantage__graphics {
       display: flex;
       flex-direction: column;
       margin: 0;
+
       &-pic {
         margin: auto;
         max-width: 100%;
       }
+
       &-subtitle {
         text-align: center;
         font-size: 14px;
@@ -59,11 +70,13 @@
       }
     }
   }
+
   &__line {
     width: 100%;
     border-bottom: 1px solid $grey-line;
     margin-bottom: 40px;
   }
+  
   @include full-version {
     display: none;
   }

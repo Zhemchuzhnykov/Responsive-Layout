@@ -5,11 +5,13 @@
     display: flex;
     padding: 115px 99px 101px 193px;
   }
+
   & .inbox-img {
     margin: 0px 0px 32px 0px;
     @include full-version {
       margin: 27px 0px 0px 0px;
     }
+
     &__pic {
       max-width: 100%;
       @include full-version {
@@ -17,6 +19,7 @@
         margin-bottom: 15px;
       }
     }
+
     &__subtitle {
       display: none;
       @include full-version {
@@ -29,7 +32,9 @@
       }
     }
   }
+
   &__text {
+
     &-small-title {
       font-size: 22px;
       font-weight: 700;
@@ -40,6 +45,7 @@
         margin: 0px 0px 24px 192px;
       }
     }
+
     &-big-title {
       font-size: 40px;
       font-weight: 700px;
@@ -56,6 +62,7 @@
         margin: 0px 0px 30px 190px;
       }
     }
+
     &-paragraph {
       font-size: 24px;
       min-height: 205px;
@@ -67,6 +74,7 @@
         margin: 0px 0px 44px 192px;
       }
     }
+
     & .inbox-feature__feedback {
       min-height: 323px;
       background: $white;
@@ -79,6 +87,7 @@
         margin-left: 164px;
         padding: 30px 30px 24px 29px;
       }
+
       &-text {
         font-size: 20px;
         min-height: 169px;
@@ -89,12 +98,15 @@
           min-height: 85px;
         }
       }
+
       & .feedback-giver {
         display: flex;
         align-items: flex-start;
+
         &__pic {
           margin-top: 3px;
         }
+
         &__identity {
           margin-left: 11px;
           min-height: 66px;
@@ -102,12 +114,14 @@
             max-width: 225px;
             min-height: 44px;
           }
+
           & > .feedback-giver__name {
             font-weight: 700;
             font-size: 16px;
             line-height: 22px;
             margin: 0;
           }
+          
           & > .feedback-giver__title {
             font-size: 16px;
             line-height: 22px;

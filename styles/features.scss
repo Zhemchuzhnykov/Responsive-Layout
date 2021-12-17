@@ -6,13 +6,16 @@
     position: relative;
     padding-bottom: 103px;
   }
+
   &__left-bar-picture {
     position: absolute;
     top: 258px;
     height: 166px;
   }
+
   & .product-info {
     padding-left: 126px;
+
     &__upper-title {
       font-weight: 700;
       font-size: 22px;
@@ -21,6 +24,7 @@
       margin: 0;
       padding-left: 2px;
     }
+
     &__big-title {
       font-weight: 700;
       font-size: 56px;
@@ -30,6 +34,7 @@
       padding-top: 24px;
       letter-spacing: -0.5px;
     }
+
     &__selling-text_main {
       font-size: 24px;
       line-height: 34px;
@@ -38,12 +43,14 @@
       margin: 0;
       padding: 30px 0px 0px 2px;
     }
+
     & .blue-sells-point-container {
       display: flex;
       align-items: flex-start;
       min-height: 70px;
       padding-top: 42px;
       padding-left: 3px;
+
       &__title {
         color: $blue;
         font-weight: 700;
@@ -56,6 +63,7 @@
       }
       }
     }
+
     &__selling-text_for-blue-sells-title {
       font-size: 18px;
       min-height: 81px;
@@ -65,11 +73,13 @@
       padding: 8px 0px 18px 3px;
       margin: 0;
     }
+
     & .selling-point {
       display: flex;
       min-height: 71px;
       border-bottom: 1px solid $grey-line;
       padding: 20px 0px 22px 4px;
+
       &__text {
         font-weight: 700;
         font-size: 22px;
@@ -77,10 +87,12 @@
         padding: 3px 0px 0px 15px;
       }
     }
+
     & .selling-point_bottom {
       padding: 21px 0px 24px 0px;
     }
   }
+  
   &__banner {
     margin-left: auto;
     filter: drop-shadow(0px 4px 16px rgba(44, 50, 65, 0.08));

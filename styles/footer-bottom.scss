@@ -1,4 +1,5 @@
 .footer {
+
   &-bottom {
     display: flex;
     flex-direction: column;
@@ -9,6 +10,7 @@
       width: 100%;
       padding: 13px 0px 15px 0px;
     }
+
     & .terms {
       display: flex;
       justify-content: space-between;
@@ -18,6 +20,7 @@
       @include full-version {
         margin: 0px 0px 0px 130px;
       }
+
       &__item {
         font-size: 14px;
         color: $text-transperant;
@@ -25,15 +28,18 @@
         text-decoration: none;
       }
     }
+
     & .social-networks {
       height: 18px;
       @include full-version {
         margin-left: auto;
       }
+
       &__item {
         line-height: 18px;
         text-decoration: none;
         padding-right: 20px;
+        
         &_linkedin {
           @include full-version {
             margin-right: 132px

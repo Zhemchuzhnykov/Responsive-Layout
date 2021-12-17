@@ -4,6 +4,7 @@
   @include full-version {
     padding: 43px 0px 0px 0px;
   }
+
   &-main {
     display: flex;
     flex-direction: column;
@@ -13,6 +14,7 @@
     flex-direction: row;
     padding: 0px 0px 47px 130px;
   }
+
   & .about-company {
     display: flex;
     flex-direction: column;
@@ -22,6 +24,7 @@
       align-items: baseline;
       padding: 0;
     }
+
     & .footer-logo {
       display: flex;
       flex-direction: column;
@@ -29,11 +32,13 @@
       @include full-version {
         flex-direction: row;
       }
+
       &__img {
         @include full-version {
           margin-right: 15px;
         }
       }
+
       &__text {
         display: flex;
         flex-direction: column;
@@ -45,11 +50,13 @@
           align-items: baseline;
           margin: 0;
         }
+
         &-title {
           font-size: 20px;
           font-weight: 700;
           line-height: 25px;
         }
+
         &-transperant {
           font-size: 18px;
           line-height: 25px;
@@ -57,6 +64,7 @@
         }
       }
     }
+
     &__text {
       display: none;
       @include full-version {
@@ -69,16 +77,20 @@
         margin: 26px 0px 25px 0px;
       }
     }
+
     & .downloads {
       display: flex;
+
       &__link {
         height: 40px;
+
         &_apple {
           margin-right: 10px;
         }
       }
     }
   }
+
   & .footer-line-mobile {
     width: 100%;
     border-bottom: 1px solid $grey-line;
@@ -86,6 +98,7 @@
       display: none;
     }
   }
+
   & .footer-nav {
     display: flex;
     flex-direction: column;
@@ -96,6 +109,7 @@
       margin: 17px 0px 0px 126px;
       padding: 0;
     }
+
     &__column_product {
       width: 100%;
       margin-bottom: 30px;
@@ -105,7 +119,9 @@
         margin: 0px 29px 0px 0px;
       }
     }
+
     &__column {
+
       &-title {
         font-weight: 700;
         font-size: 22px;
@@ -113,22 +129,26 @@
         margin: 0px 0px 18px 0px;
       }
     }
+
     &__column-list {
       list-style-type: none;
       padding: 0;
       margin: 0;
+
       &_product {
         height: 175px;
         @include full-version {
           height: 185px;
         }
       }
+
       &_company {
         height: 185px;
         @include full-version {
           height: 136px;
         }
       }
+      
       &-item {
         font-size: 18px;
         line-height: 30px;

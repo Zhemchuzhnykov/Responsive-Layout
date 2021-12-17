@@ -6,6 +6,7 @@
     align-items: center;
     padding: 106px 325px 110px 325px;
   }
+
   &__title {
     text-align: center;
     font-size: 40px;
@@ -23,6 +24,7 @@
       letter-spacing: -0.5px;
     }
   }
+
   &__description {
     text-align: center;
     font-size: 24px;
@@ -35,6 +37,7 @@
       margin-bottom: 28px;
     }
   }
+
   &__button {
     margin-bottom: 39px;
     @include full-version {
@@ -42,6 +45,7 @@
       margin-bottom: 110px;
     }
   }
+
   &__vacancy {
     max-width: 100%;
     min-height: 140px;
@@ -53,18 +57,22 @@
       min-height: 81px;
       margin-bottom: 20px;
     }
+
     &_developer-ny {
       margin-bottom: 0;
     }
   }
+
   & .vacancy {
     display: flex;
+
     &__brief {
       flex: 7;
       @include full-version {
         flex: 14.744;
       }
     }
+
     & .position {
       display: flex;
       flex-direction: column;
@@ -75,6 +83,7 @@
         justify-content: flex-start;
         padding: 26px 0px 26px 25px;
       }
+
       &__title {
         font-weight: 700;
         font-size: 22px;
@@ -85,6 +94,7 @@
           min-height: 29px;
         }
       }
+
       &__location {
         font-size: 16px;
         line-height: 22px;
@@ -99,14 +109,16 @@
         }
       }
     }
+
     &__button {
       display: flex;
       flex: 1;
-      border: none;
+      border: 0;
       background-color: $dark-grey-background;
       @include full-version {
         background-color: transparent;
       }
+
       &-arrow {
         display: block;
         margin: auto;
@@ -115,23 +127,28 @@
         background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png");
       }
     }
+
     &:hover {
       @include full-version {
         background-color: $blue;
         cursor: pointer;
       }
+
       & .vacancy__button {
+
         &-arrow {
           @include full-version {
             background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png");
           }
         }
       }
+
       & .position__title {
         @include full-version {
           color: $white;
         }
       }
+      
       & .position__location {
         @include full-version {
           color: $white;

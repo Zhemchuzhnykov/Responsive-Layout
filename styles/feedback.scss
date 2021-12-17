@@ -8,6 +8,7 @@
     position: relative;
     padding: 0px 130px 66px 130px;
   }
+
   &__title {
     font-size: 24px;
     font-weight: 700;
@@ -21,6 +22,7 @@
       margin-bottom: 28px;
     }
   }
+
   &__text {
     font-size: 24px;
     min-height: 307px;
@@ -33,12 +35,14 @@
       margin-bottom: 34px;
     }
   }
+
   &__giver-name {
     line-height: 24px;
     font-size: 16px;
     font-weight: 700;
     margin: 0;
   }
+
   &__giver-title {
     line-height: 24px;
     font-size: 16px;
@@ -48,6 +52,7 @@
       margin-bottom: 38px;
     }
   }
+
   &__navigation {
     display: flex;
     justify-content: center;
@@ -55,19 +60,22 @@
     @include full-version {
       margin-bottom: 0;
     }
+
     & .feedback-navigation__item {
       height: 12px;
       background-color: transparent;
-      border: none;
+      border: 0;
       margin-right: 19.5px;
       padding: 0;
       @include full-version {
         margin-right: 13px;
         height: 8px;
       }
+
       &_right {
         margin-right: 0;
       }
+
       &-shape {
         border-radius: 50px;
         fill: $grey-circle;
@@ -78,11 +86,13 @@
           height: 8px;
         }
       }
+
       &_left .feedback-navigation__item-shape {
         fill: $blue;
       }
     }
   }
+  
   &__img {
     @include full-version {
       position: absolute;

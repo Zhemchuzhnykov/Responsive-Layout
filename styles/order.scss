@@ -8,16 +8,19 @@
     flex-direction: row;
     padding: 73px 228px 72px 224px;
   }
+
   &__img {
     width: 200px;
     @include full-version {
       width: 269.41px;
     }
   }
+
   &__text {
     display: flex;
     flex-direction: column;
   }
+
   &__text .order__title {
     text-align: center;
     font-size: 40px;
@@ -34,6 +37,7 @@
       margin: 33px 0px 0px 122.59px;
     }
   }
+
   &__text .order__paragraph {
     font-size: 22px;
     width: 100%;
@@ -46,6 +50,7 @@
       margin: 12px 0px 26px 121.59px;
     }
   }
+
   &__text .order__action-buttons {
     display: flex;
     flex-direction: column;
@@ -53,6 +58,7 @@
       flex-direction: row;
       margin-left: 123.59px;
     }
+
     &_email {
       text-align: center;
       font-size: 18px;
@@ -67,10 +73,12 @@
           margin: 0;
           padding-left: 15px;
     }
+
     &::placeholder {
       color: $text;
     }
     }
+
     &_get-started {
       margin-bottom: 10px;
     @include full-version {
@@ -78,6 +86,7 @@
     }
     }
   }
+  
   &__text .order__terms {
     font-size: 14px;
     height: 44px;

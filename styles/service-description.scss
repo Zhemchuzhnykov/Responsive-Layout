@@ -6,6 +6,7 @@
     display: flex;
     padding: 77px 131px 76px 130px;
   }
+
   &__article {
     display: flex;
     flex-direction: column;
@@ -17,6 +18,7 @@
       width: 555px;
       margin-right: 29px;
     }
+
     &_forwhom {
       height: 136px;
       @include full-version {
@@ -24,12 +26,14 @@
         margin-right: 0;
       }
     }
+
     & .service-description__title {
       font-size: 22px;
       font-weight: 700;
       line-height: 32px;
       margin: 0px;
     }
+    
     & .service-description__paragraph {
       font-size: 22px;
       line-height: 32px;

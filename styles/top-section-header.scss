@@ -7,6 +7,7 @@
     padding-top: 39px;
   }
 }
+
 .header {
   display: flex;
   align-items: center;
@@ -19,8 +20,10 @@
     background-color: $pink-background;
     margin: 0 auto;
   }
+
   & .logo {
     display: flex;
+
     &__image {
       display: none;
       @include full-version {
@@ -29,6 +32,7 @@
         min-height: 60px;
         margin: 2px 15px 0px 0px;
       }
+
       &_mobile {
         max-width: 48px;
         min-height: 48px;
@@ -38,6 +42,7 @@
         }
       }
     }
+
     &__text {
       display: flex;
       flex-direction: column;
@@ -45,12 +50,14 @@
       @include full-version {
         max-width: 222px;
       }
+
       &_title {
         font-size: 20px;
         font-weight: 700;
         max-width: 111px;
         line-height: 25px;
       }
+
       &_description {
         display: none;
         @include full-version {
@@ -63,6 +70,7 @@
       }
     }
   }
+
   &__nav {
     display: none;
     @include full-version {
@@ -72,13 +80,16 @@
       width: 292px;
       margin: 0px 56px 0px auto;
     }
+
       &-item {
         font-size: 18px;
         color: $text;
         text-decoration: none;
         line-height: 25px;
+
         &_library {
           padding-right: 0;
+
           & .header__nav-arrow  {
             display: inline-block;
             vertical-align: middle;
@@ -87,11 +98,13 @@
             margin-left: 11px;
           }
         }
+
         &_selected {
           font-weight: 700;
         }
       }
     }
+
     &__button {
       display: none;
       @include full-version {
@@ -102,10 +115,11 @@
         font-weight: 700;
         background-color: $blue;
         color: $white;
-        border: none;
+        border: 0;
         border-radius: 2px;
       }
     }
+
     &__mobile-menu {
       display: flex;
       margin-left: auto;
@@ -115,10 +129,11 @@
       @include full-version {
         display: none;
       }
+      
       &-button {
         margin: auto;
         background-color: transparent;
-        border: none;
+        border: 0;
       }
     }
   }

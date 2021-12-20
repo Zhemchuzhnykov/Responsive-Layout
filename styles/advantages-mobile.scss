@@ -8,8 +8,11 @@
     &_bottom {
       padding-bottom: 0;
     }
+  }
 
-    & > .advantage__small-title {
+  & .advantage {
+
+    &__small-title {
       font-weight: 700;
       font-size: 22px;
       line-height: 34px;
@@ -18,7 +21,7 @@
       padding: 0;
     }
 
-    & > .advantage__big-title {
+    &__big-title {
       font-weight: 700;
       font-size: 40px;
       height: 124px;
@@ -27,17 +30,17 @@
       letter-spacing: -0.36px;
     }
 
-    & > .advantage__big-title_engage {
+    &__big-title_engage {
       height: 87px;
       margin: 17px 0px 18px 0px;
     }
 
-    & > .advantage__big-title_customer-experience {
+    &__big-title_customer-experience {
       height: 126px;
       margin-bottom: 13px;
     }
 
-    & > .advantage__paragraph {
+    &__paragraph {
       font-size: 24px;
       height: 168px;
       line-height: 34px;
@@ -45,31 +48,26 @@
       margin-bottom: 30px;
     }
 
-    & > .advantage__paragraph_ticket-system {
+    &__paragraph_ticket-system {
       height: 169px;
       margin-bottom: 29px;
     }
 
-    & .advantage__graphics {
-      display: flex;
-      flex-direction: column;
-      margin: 0;
-
-      &-pic {
-        margin: auto;
-        max-width: 100%;
+    &__pic {
+      margin: auto;
+      max-width: 100%;
       }
 
-      &-subtitle {
-        text-align: center;
-        font-size: 14px;
-        height: 22px;
-        line-height: 22px;
-        color: $text-transperant;
-        margin-top: 20px;
+    &__pic-subtitle {
+      display: block;
+      text-align: center;
+      font-size: 14px;
+      height: 22px;
+      line-height: 22px;
+      color: $text-transperant;
+      margin-top: 20px;
       }
     }
-  }
 
   &__line {
     width: 100%;

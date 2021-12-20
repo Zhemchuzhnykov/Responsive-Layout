@@ -74,61 +74,61 @@
         margin: 0px 0px 44px 192px;
       }
     }
+  }
+}
 
-    & .inbox-feature__feedback {
-      min-height: 323px;
-      background: $white;
-      border-bottom: 4px solid $blue-line;
-      padding: 30px 20px 28px 20px;
-      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+.feedback-box {
+  min-height: 323px;
+  background: $white;
+  border-bottom: 4px solid $blue-line;
+  padding: 30px 20px 28px 20px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+  @include full-version {
+    max-width: 519px;
+    min-height: 213px;
+    margin-left: 164px;
+    padding: 30px 30px 24px 29px;
+  }
+
+  &__text {
+    font-size: 20px;
+    min-height: 169px;
+    line-height: 28px;
+    margin: 0px 0px 26px 0px;
+    @include full-version {
+      max-width: 459px;
+      min-height: 85px;
+    }
+  }
+
+  & .feedback-giver {
+    display: flex;
+    align-items: flex-start;
+
+    &__pic {
+      margin-top: 3px;
+    }
+
+    &__identity {
+      margin-left: 11px;
+      min-height: 66px;
       @include full-version {
-        max-width: 519px;
-        min-height: 213px;
-        margin-left: 164px;
-        padding: 30px 30px 24px 29px;
+        max-width: 225px;
+        min-height: 44px;
       }
 
-      &-text {
-        font-size: 20px;
-        min-height: 169px;
-        line-height: 28px;
-        margin: 0px 0px 26px 0px;
-        @include full-version {
-          max-width: 459px;
-          min-height: 85px;
-        }
+      & > .feedback-giver__name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0;
       }
-
-      & .feedback-giver {
-        display: flex;
-        align-items: flex-start;
-
-        &__pic {
-          margin-top: 3px;
-        }
-
-        &__identity {
-          margin-left: 11px;
-          min-height: 66px;
-          @include full-version {
-            max-width: 225px;
-            min-height: 44px;
-          }
-
-          & > .feedback-giver__name {
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 22px;
-            margin: 0;
-          }
-          
-          & > .feedback-giver__title {
-            font-size: 16px;
-            line-height: 22px;
-            color: $text-transperant;
-            margin: 0px;
-          }
-        }
+      
+      & > .feedback-giver__title {
+        font-size: 16px;
+        line-height: 22px;
+        color: $text-transperant;
+        margin: 0px;
       }
     }
   }

@@ -6,60 +6,60 @@
     width: 1140px;
     margin: 76px auto 126px auto;
   }
+}
 
-  &__content {
-    padding: 0px 15px 33px 15px;
+.headline-content {
+  padding: 0px 15px 33px 15px;
+  @include full-version {
+    z-index: 1;
+    padding: 0;
+  }
+
+  &__title {
+    font-size: 50px;
+    font-weight: 700;
+    min-height: 205px;
+    line-height: 50px;
+    margin: 0px 0px 19px 0px;
+    letter-spacing: -0.3125px;
     @include full-version {
-      z-index: 1;
-      padding: 0;
-    }
-
-    & .headline__title {
-      font-size: 50px;
-      font-weight: 700;
-      min-height: 205px;
-      line-height: 50px;
-      margin: 0px 0px 19px 0px;
-      letter-spacing: -0.3125px;
-      @include full-version {
-        line-height: 78px;
-        font-size: 80px;
-        max-width: 754px;
-        min-height: 165px;
-        margin: 0px 0px 34px 0px;
-        letter-spacing: -0.5px;
-      }
-    }
-
-    & .headline__description {
-      font-size: 24px;
-      line-height: 34px;
-      min-height: 172px;
-      margin: 0px 0px 30px 0px;
-      @include full-version {
-        max-width: 456px;
-        min-height: 102px;
-        margin-bottom: 58px;
-      }
-    }
-
-    & .headline__buttons {
-      display: flex;
-      flex-direction: column;
-      @include full-version {
-        flex-direction: row;
-      }
+      line-height: 78px;
+      font-size: 80px;
+      max-width: 754px;
+      min-height: 165px;
+      margin: 0px 0px 34px 0px;
+      letter-spacing: -0.5px;
     }
   }
-  
-  &__banner {
-    width: 100%;
-    margin-bottom: 36px;
+
+  &__description {
+    font-size: 24px;
+    line-height: 34px;
+    min-height: 172px;
+    margin: 0px 0px 30px 0px;
     @include full-version {
-      position: absolute;
-      right: 25px;
-      max-width: 796px;
-      margin-bottom: 8px 0px 0px 0px;
+      max-width: 456px;
+      min-height: 102px;
+      margin-bottom: 58px;
     }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    @include full-version {
+      flex-direction: row;
+    }
+  }
+}
+
+.headline__banner {
+  width: 100%;
+  margin-bottom: 36px;
+  @include full-version {
+    position: absolute;
+    right: 25px;
+    max-width: 796px;
+    margin: 8px 0px 0px 0px;
   }
 }

@@ -45,115 +45,109 @@
       margin-bottom: 110px;
     }
   }
+}
 
-  &__vacancy {
-    max-width: 100%;
-    min-height: 140px;
-    border: 1px solid $border;
-    border-radius: 8px;
-    margin-bottom: 15px;
+.vacancies {
+  display: flex;
+  max-width: 100%;
+  min-height: 140px;
+  border: 1px solid $border;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  @include full-version {
+    width: 750px;
+    min-height: 81px;
+    margin-bottom: 20px;
+  }
+
+  &_dev-ny {
+    margin-bottom: 0;
+  }
+
+  &__brief {
+    flex: 7;
     @include full-version {
-      width: 750px;
-      min-height: 81px;
-      margin-bottom: 20px;
-    }
-
-    &_developer-ny {
-      margin-bottom: 0;
+      flex: 14.744;
     }
   }
 
-  & .vacancy {
+  & .position {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 19px 20px;
+    @include full-version {
+      flex-direction: row;
+      justify-content: flex-start;
+      padding: 26px 0px 26px 25px;
+    }
 
-    &__brief {
-      flex: 7;
+    &__title {
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 28px;
+      margin: 0;
       @include full-version {
-        flex: 14.744;
+        flex: 2;
+        min-height: 29px;
       }
     }
 
-    & .position {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      padding: 19px 20px;
+    &__location {
+      font-size: 16px;
+      line-height: 22px;
+      color: $text-transperant;
+      min-height: 26px;
+      margin: 0;
       @include full-version {
-        flex-direction: row;
-        justify-content: flex-start;
-        padding: 26px 0px 26px 25px;
-      }
-
-      &__title {
-        font-weight: 700;
-        font-size: 22px;
-        line-height: 28px;
-        margin: 0;
-        @include full-version {
-          flex: 2;
-          min-height: 29px;
-        }
-      }
-
-      &__location {
-        font-size: 16px;
-        line-height: 22px;
-        color: $text-transperant;
-        min-height: 26px;
-        margin: 0;
-        @include full-version {
-          flex: 1;
-          font-size: 18px;
-          line-height: 24px;
-          margin-top: 2px;
-        }
+        flex: 1;
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 2px;
       }
     }
+  }
 
-    &__button {
-      display: flex;
-      flex: 1;
-      border: 0;
-      background-color: $dark-grey-background;
-      @include full-version {
-        background-color: transparent;
-      }
-
-      &-arrow {
-        display: block;
-        margin: auto;
-        width: 7px;
-        height: 12px;
-        background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png");
-      }
+  &__button {
+    display: flex;
+    flex: 1;
+    border: 0;
+    background-color: $dark-grey-background;
+    @include full-version {
+      background-color: transparent;
     }
 
-    &:hover {
-      @include full-version {
-        background-color: $blue;
-        cursor: pointer;
-      }
+    &-arrow {
+      display: block;
+      margin: auto;
+      width: 7px;
+      height: 12px;
+      background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right.png");
+    }
+  }
+}
 
-      & .vacancy__button {
+.vacancies:hover {
+  @include full-version {
+    background-color: $blue;
+    cursor: pointer;
+  }
 
-        &-arrow {
-          @include full-version {
-            background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png");
-          }
-        }
-      }
+  & .vacancies__button-arrow {
+    @include full-version {
+      background-image: url("https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-arrow-right-white.png");
+    }
+  }
 
-      & .position__title {
-        @include full-version {
-          color: $white;
-        }
-      }
-      
-      & .position__location {
-        @include full-version {
-          color: $white;
-        }
-      }
+  & .position__title {
+    @include full-version {
+      color: $white;
+    }
+  }
+  
+  & .position__location {
+    @include full-version {
+      color: $white;
     }
   }
 }

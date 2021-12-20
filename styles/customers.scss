@@ -7,63 +7,60 @@
     padding: 30px 0px 106px 0px;
   }
 
-  & .customers-row {
+  &-row {
     display: flex;
     @include full-version {
       flex: 1;
       justify-content: space-between;
     }
+  }
+}
 
-    &__item {
-      display: flex;
-      flex: 1;
-      max-width: 107px;
-      height: 94px;
-      border-bottom: solid 1px $grey-line;
-      border-right: solid 1px $grey-line;
-      @include full-version {
-        border: 0;
-      }
+.customer-logo {
+  display: flex;
+  flex: 1;
+  max-width: 107px;
+  height: 94px;
+  border-bottom: solid 1px $grey-line;
+  border-right: solid 1px $grey-line;
+  @include full-version {
+    border: 0;
+  }
 
-      &_apple {
-        border-right: 0;
-      }
+  &_new-york-times {
+    @include full-version {
+      margin-left: 130px;
+    }
+  }
 
-      &_google {
-        border-right: 0;
-        @include full-version {
-          margin-right: 130px;
-        }
-      }
+  &_apple {
+    border-right: 0;
+    @include full-version {
+      margin-right: 70px;
+    }
+  }
 
-      &_new-york-times {
-        @include full-version {
-          margin-left: 130px;
-        }
-      }
+  &_google {
+    border-right: 0;
+    @include full-version {
+      margin-right: 130px;
+    }
+  }
 
-      &_apple {
-        @include full-version {
-          margin-right: 70px;
-        }
-      }
+  &-img {
+    filter: brightness(0) opacity(0.9);
+    margin: auto;
+    max-width: 70%;
+    @include full-version {
+      max-width: 100% !important;
+    }
 
-      & > .customers-logo {
-        filter: brightness(0) opacity(0.9);
-        margin: auto;
-        max-width: 70%;
-        @include full-version {
-          max-width: 100% !important;
-        }
-      }
+    &_apple {
+      max-width: 30%;
+    }
 
-      & > .customers-logo_apple {
-        max-width: 30%;
-      }
-      
-      & > .customers-logo_wsj {
-        max-width: 50%;
-      }
+    &_wsj {
+      max-width: 50%;
     }
   }
 }
